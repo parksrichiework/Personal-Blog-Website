@@ -3,14 +3,14 @@
         <head>
             <meta charset="utf-8">
             <title> Food Critique Blog </title>
-            <meta name="description" content="Example">
+            <meta name="description" content="A webpage for a food critique blog">
             <link rel="stylesheet" type="text/css" href="css/styles.css">
             <link rel="icon" href="img/food-logo.png" alt="Image of Website logo" title="Website logo">
             <!-- TODO: ADD FONT LINKS HERE -->
             <!-- <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap" rel="stylesheet"> -->
         </head>
         <header id="header" class="container">            
-                <nav id="nav" class="">
+                <nav id="nav" class="box">
                     <div>                        
                         <a href="#home">
                             <!-- TODO : resize img in css -->
@@ -30,9 +30,91 @@
                     </div>
                 </nav>           
         </header>
-        <body id="body" class="container">
-            <div>
-
-            </div>
-        </body>
+        <main>
+            <body id="body" class="container">
+                <!-- TODO: add background-image:url(..img/featured-blog-img.jpg) to css file  -->
+                <div id="featured" class="box">
+                    <h1>
+                        Featured Blog Post Title
+                    </h1>
+                    <h2>
+                        Price Breakdown: $10.99
+                    </h2>
+                    <!-- TODO: add color circle behind "vegan" with css  -->
+                    <a>
+                        <h3>V</h3>
+                    </a>
+                    <!-- TODO: add color circle behind "vegetarian" with css  -->
+                    <a>
+                        <h3>Vg</h3>
+                    </a>
+                </div>
+                <div id="other-posts" class="box">
+                    <div>
+                        <h1>
+                            Blog Post 01
+                        </h1>
+                        <h2>
+                            Price Breakdown: $12.99
+                        </h2>
+                    </div>
+                    <div id="other-posts" class="box">
+                        <h1>
+                            Blog Post 02
+                        </h1>
+                        <h2>
+                            Price Breakdown: $5.99
+                        </h2>
+                    </div>             
+                </div>
+                <div id="categories" class="container">
+                    <a>
+                        <img href="#" alt="Image of icon for Vegan category">
+                    </a>
+                    <a>
+                        <img href="#" alt="Image of icon for Vegetarian category">
+                    </a>
+                    <a>
+                        <img href="#" alt="Image of icon for Sugar-free category">
+                    </a>
+                    <a>
+                        <img href="#" alt="Image of icon for Non-alcoholic category">
+                    </a>
+                    <a>
+                        <img href="#" alt="Image of icon for Dairy-free category">
+                    </a>
+                </div>
+                <a class="box">
+                    <h1>Browse all Recipes</h1>
+                </a>
+                <div id="subscribe" class="box">
+                    <form>
+                        <label for="subscribe">Never miss a 'tique!:</label>
+                        <input type="text" id="subscribe-name" name="fname" placeholder="First name">
+                        <input type="email" id="subscribe-mail" name="email" placeholder="email@contact.com">                        
+                        <input type="submit" id="submit-button" value="Submit">
+                        <input type="reset" id="reset-button">
+                    </form>
+                </div>
+            </body>
+            <footer id="footer" class="container">
+                <h4>
+                    All Rights Reserved 2023
+                </h4>
+                <div id="share-options">
+                    <!-- TODO: ADD TWITTER ICON IMG HERE  -->
+                    <a>
+                        <img href="#" alt="Image of icon for twitter logo">
+                    </a>
+                    <!-- TODO: ADD INSTAGRAM ICON IMG HERE  -->
+                    <a>
+                        <img href="#" alt="Image of icon for image instagram logo">
+                    </a>
+                    <!-- TODO: ADD TIKTOK ICON IMG HERE  -->
+                    <a>
+                        <img href="#" alt="Image of icon for tiktok logo">
+                    </a>
+                </div>
+            </footer>
+        </main>
     </html>
