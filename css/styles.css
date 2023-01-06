@@ -24,7 +24,7 @@
 body{
     margin:0;
     width:100%;
-    height:auto;
+    height:auto;    
     background-color: var(--deep-champagne);
     display:grid;
     grid-template-columns: 100%;
@@ -42,25 +42,34 @@ nav{
     flex-direction: row;
     height:inherit;
     align-items: center;
-    justify-content: space-between;
+    justify-content: stretch;
     margin: inherit;
-    grid-area: header;
+    
 }
 nav img{
     max-height: 40px;
 }
-#nav{
-    
+#nav1{
+    grid-area: logo;
+ }
+ #nav2{
+    grid-area: category;
+ }
+ #nav3{
+    grid-area: about;
  }
 /*  nav bar styles end  */
 /* -------------------------- */
 /* header styles start  */
 header{
-    width:inherit;
+    width:100%;
     background-color: var(--skobeloff);
-    margin:0;
-    display: grid;
-    grid-template-columns: 60px 100px 100px;
+    margin:0;   
+    grid-template-columns: 30px 100px 200px 40px 40px;
+    padding: 10px;
+    grid-area: header;
+    grid-template-areas:
+    "logo space category about search";
 }
 /*  header styles end  */
 /* -------------------------- */
