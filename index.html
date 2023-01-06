@@ -9,94 +9,93 @@
             <!-- TODO: ADD FONT LINKS HERE -->
             <!-- <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap" rel="stylesheet"> -->
         </head>
-        <header id="header" class="container">            
-                <nav id="nav" class="box">
-                    <div>                        
-                        <a href="#home">
-                            <!-- TODO : resize img in css -->
-                            <img src="img/food-logo.png" alt="Image of Website Logo">
-                        </a>                        
-                        <a href="#categories">
-                            <h1>Categories</h1>
-                        </a>
-                        <!-- TODO: make "about" html page and link it below  -->
-                        <a href="#about">
-                            <h1>About</h1>
-                        </a>
-                        <a href="#">
-                            <img src="img/search-icon.png">
-                            <h1>Search</h1>
-                        </a>                         
-                    </div>
+        <body id="body" class="container">  
+            <header id="header" class="box">            
+                <nav id="nav" class="nested-grid">                                       
+                    <a href="#home">
+                        <!-- TODO : resize img in css -->
+                        <img src="img/food-logo.png" alt="Image of Website Logo">
+                    </a>                        
+                    <a href="#categories">
+                        <h1>Categories</h1>
+                    </a>
+                    <!-- TODO: make "about" html page and link it below  -->
+                    <a href="#about">
+                        <h1>About</h1>
+                    </a>
+                    <input type="text" placeholder="Search">                                               
+                    <input type="submit" value="submit"></h1>                  
                 </nav>           
-        </header>
-        <main>
-            <body id="body" class="container">
-                <!-- TODO: add background-image:url(..img/featured-blog-img.jpg) to css file  -->
-                <div id="featured" class="box">
-                    <h1>
-                        Featured Blog Post Title
-                    </h1>
-                    <h2>
-                        Price Breakdown: $10.99
-                    </h2>
-                    <!-- TODO: add color circle behind "vegan" with css  -->
-                    <a>
-                        <h3>V</h3>
-                    </a>
-                    <!-- TODO: add color circle behind "vegetarian" with css  -->
-                    <a>
-                        <h3>Vg</h3>
-                    </a>
-                </div>
-                <div id="other-posts" class="box">
-                    <div>
+            </header>
+            <div id="main-container" class="container">
+                <main id="main" class="container">                      
+                    <!-- TODO: add background-image:url(..img/featured-blog-img.jpg) to css file  -->
+                    <div id="featured" class="box">
                         <h1>
-                            Blog Post 01
+                            Featured Blog Post Title
                         </h1>
                         <h2>
-                            Price Breakdown: $12.99
+                            Price Breakdown: $10.99
                         </h2>
+                        <!-- TODO: add color circle behind "vegan" with css  -->
+                        <a>
+                            <h3>V</h3>
+                        </a>
+                        <!-- TODO: add color circle behind "vegetarian" with css  -->
+                        <a>
+                            <h3>Vg</h3>
+                        </a>
                     </div>
                     <div id="other-posts" class="box">
-                        <h1>
-                            Blog Post 02
-                        </h1>
-                        <h2>
-                            Price Breakdown: $5.99
-                        </h2>
-                    </div>             
-                </div>
-                <div id="categories" class="container">
-                    <a>
-                        <img href="#" alt="Image of icon for Vegan category">
+                        <div>
+                            <h1>
+                                Blog Post 01
+                            </h1>
+                            <h2>
+                                Price Breakdown: $12.99
+                            </h2>
+                        </div>
+                        <div id="other-posts" class="box">
+                            <h1>
+                                Blog Post 02
+                            </h1>
+                            <h2>
+                                Price Breakdown: $5.99
+                            </h2>
+                        </div>             
+                    </div>
+                    <div id="categories" class="container">
+                        <a id="vegan" class="category-icon">
+                            <p>V</p>
+                        </a>
+                        <a id="vegetarian" class="category-icon">
+                            <p>Vg</p>
+                        </a>
+                        <a id="sugar-free" class="category-icon">
+                            <p>SF</p>
+                        </a>
+                        <a id="non-alcoholic" class="category-icon">
+                            <p>NA</p>
+                        </a>
+                        <a id="vegan" class="category-icon">
+                            <p>DF</p>
+                        </a>
+                    </div>
+                    <a class="box">
+                        <h1>Browse all Recipes</h1>
                     </a>
-                    <a>
-                        <img href="#" alt="Image of icon for Vegetarian category">
-                    </a>
-                    <a>
-                        <img href="#" alt="Image of icon for Sugar-free category">
-                    </a>
-                    <a>
-                        <img href="#" alt="Image of icon for Non-alcoholic category">
-                    </a>
-                    <a>
-                        <img href="#" alt="Image of icon for Dairy-free category">
-                    </a>
-                </div>
-                <a class="box">
-                    <h1>Browse all Recipes</h1>
-                </a>
-                <div id="subscribe" class="box">
-                    <form>
-                        <label for="subscribe">Never miss a 'tique!:</label>
-                        <input type="text" id="subscribe-name" name="fname" placeholder="First name">
-                        <input type="email" id="subscribe-mail" name="email" placeholder="email@contact.com">                        
-                        <input type="submit" id="submit-button" value="Submit">
-                        <input type="reset" id="reset-button">
-                    </form>
-                </div>
-            </body>
+                    <div id="subscribe" class="box">
+                        <form>
+                            <label for="subscribe">Never miss a 'tique!:</label>
+                            <input type="text" id="subscribe-name" name="fname" placeholder="First name">
+                            <input type="email" id="subscribe-mail" name="email" placeholder="email@contact.com">                        
+                            <input type="submit" id="submit-button" value="Submit">
+                            <input type="reset" id="reset-button">
+                        </form>
+                    </div>
+                </main>
+            </div>    
+        </body>
             <footer id="footer" class="container">
                 <h4>
                     All Rights Reserved 2023
@@ -116,5 +115,5 @@
                     </a>
                 </div>
             </footer>
-        </main>
+        
     </html>

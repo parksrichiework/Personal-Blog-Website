@@ -1,0 +1,81 @@
+:root{
+    /* first pallete */
+    --tumbleweed: #D8A47F;
+    --raisin-black: #272932;
+    --alice-blue: #e7ecef;
+    --skobeloff: #0f7173;
+    --red-salsa: #f05d5e;
+
+    /* second pallete */
+    --ruby-red: #A41623;
+    --orange-pantone: #f85e00;
+    --rajah: #ffb563;
+    --deep-champagne: #ffd29d;
+    --gold-fusion: #918450;
+   }
+
+/* universal classes styles start  */
+.container{
+    display: grid;
+}
+/* universal classes styles end  */
+/* ----------------- */
+/* body styles start  */
+body{
+    margin:0;
+    width:100%;
+    height:auto;
+    background-color: var(--deep-champagne);
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px auto auto; 
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+/* body styles end  */
+/* -------------------------- */
+/* nav bar styles start  */
+nav{
+    display: flex;    
+    flex-direction: row;
+    height:inherit;
+    align-items: center;
+    justify-content: space-between;
+    margin: inherit;
+    grid-area: header;
+}
+nav img{
+    max-height: 40px;
+}
+#nav{
+    
+ }
+/*  nav bar styles end  */
+/* -------------------------- */
+/* header styles start  */
+header{
+    width:inherit;
+    background-color: var(--skobeloff);
+    margin:0;
+    display: grid;
+    grid-template-columns: 60px 100px 100px;
+}
+/*  header styles end  */
+/* -------------------------- */
+/* main styles start  */
+main{
+    margin:0;
+    display:
+}
+#main{
+    grid-area: main;
+}
+/*  header styles end  */
+/* -------------------------- */
+/* main styles start  */
+
+#footer{
+    grid-area: footer;
+}
