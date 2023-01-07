@@ -36,19 +36,44 @@ body{
 }
 /* body styles end  */
 /* -------------------------- */
+
+/* header styles start  */
+header{
+    width:100%;
+    background-color: var(--skobeloff);
+    margin:0;   
+    padding: 10px;
+    grid-area: header;    
+}
+/*  header styles end  */
+/* -------------------------- */
 /* nav bar styles start  */
 nav{
-    display: flex;    
-    flex-direction: row;
-    height:inherit;
+    display: inherit;
     align-items: center;
-    justify-content: stretch;
-    margin: inherit;
-    
+    grid-gap: 10px;
+    grid-template-columns: 80px 450px auto auto 90px;
+    grid-template-rows: 80px;
+    grid-template-areas:
+    "logo space category about search";        
 }
 nav img{
-    max-height: 40px;
+    max-height: 80px;
+    border-radius: 50%;
 }
+nav a{
+    text-decoration: none;
+    color: var(--raisin-black);    
+}
+nav button{
+    background-color: var(--orange-pantone);
+    border-radius: 50px;
+    border: solid 1px var(--orange-pantone);
+    font-size: 30px;
+    padding: 10px;
+    color: var(--deep-champagne);
+}
+
 #nav1{
     grid-area: logo;
  }
@@ -58,27 +83,21 @@ nav img{
  #nav3{
     grid-area: about;
  }
+ #nav4{
+    grid-area: search;    
+ }
+ 
 /*  nav bar styles end  */
-/* -------------------------- */
-/* header styles start  */
-header{
-    width:100%;
-    background-color: var(--skobeloff);
-    margin:0;   
-    grid-template-columns: 30px 100px 200px 40px 40px;
-    padding: 10px;
-    grid-area: header;
-    grid-template-areas:
-    "logo space category about search";
-}
-/*  header styles end  */
 /* -------------------------- */
 /* main styles start  */
 main{
     margin:0;
-    display:
+    grid-template-columns: ;
 }
 #main{
+    display: 
+}
+#main-container{
     grid-area: main;
 }
 /*  header styles end  */
@@ -88,3 +107,9 @@ main{
 #footer{
     grid-area: footer;
 }
+
+
+/* MEDIA STYLES TEMPLATE (below) 
+@media(max-width: 320px)
+@media(min-width: 901px)
+@media(min-width: 600px) and (max-width: 900px) */
