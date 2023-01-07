@@ -18,6 +18,9 @@
 .container{
     display: grid;
 }
+.category-icon{
+   /* TODO: make universal styles for category icons */
+}
 /* universal classes styles end  */
 /* ----------------- */
 /* body styles start  */
@@ -95,29 +98,35 @@ main{
     gap: 50px;
 }
 #main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    width: 100%;
-    
+    width: 100%;    
 }
 #main-container{
     grid-area: main;
     
 }
+/*-------------- featured section styles start  */
 #featured{
     width: 100%;
     height: 1100px;
     background-image: url(../img/featured-food-img.jpg);
     background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display:flex;
     flex-direction: column;
+    justify-content: end;
+    align-items: center;
     color: var(--orange-pantone);    
 }
-/*  header styles end  */
+#featured-category-box{
+    display:grid;
+    grid-template-columns: 100px 100px;    
+}
+
+/* -------------featured section styles end  */
+/*  main styles end  */
 /* -------------------------- */
-/* main styles start  */
+/* footer styles start  */
 
 #footer{
     grid-area: footer;
