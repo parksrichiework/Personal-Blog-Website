@@ -11,15 +11,35 @@
     --orange-pantone: #f85e00;
     --rajah: #ffb563;
     --deep-champagne: #ffd29d;
+    --deep-champagne-70: #ffd19dc3;
     --gold-fusion: #918450;
+    --gold-fusion-70: #918450c3;
+
+    /* universal palette */
+    --off-white:#f4f4f4;
    }
 
 /* universal classes styles start  */
 .container{
     display: grid;
 }
+.box{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 .category-icon{
-   /* TODO: make universal styles for category icons */
+   display:flex;
+   color: var(--deep-champagne);
+   background-color: var(--raisin-black);
+   font-size: 30pt;
+   width: 50px;
+   height: 50px;
+   padding:30px;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   text-decoration: none;
 }
 /* universal classes styles end  */
 /* ----------------- */
@@ -109,20 +129,41 @@ main{
     width: 100%;
     height: 1100px;
     background-image: url(../img/featured-food-img.jpg);
-    background-size:cover;
+    /* background-size:cover; */
     background-position: center;
-    background-repeat: no-repeat;
-    display:flex;
-    flex-direction: column;
-    justify-content: end;
+    background-repeat: no-repeat;   
+    display: inherit;
     align-items: center;
-    color: var(--orange-pantone);    
+    justify-content: center;    
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 600px 100px 100px 100px;
+    grid-template-areas:
+    " space"
+    " title"
+    " price"
+    " ftcategory";         
 }
-#featured-category-box{
+#featured1{
+    grid-area: title;    
+    font-size: 60pt;
+    color: var(--deep-champagne);
+    background-color: var(--gold-fusion-70);    
+    padding: 30px 0px;        
+}
+#featured2{
+    grid-area: price;
+    font-size: 35pt;
+    color: var(--off-white);    
+}
+#featured3{
+    grid-area: ftcategory;
     display:grid;
-    grid-template-columns: 100px 100px;    
+    font-size: 35pt;
+    gap: 30px;
+    grid-template-columns: 100px 100px;
+    color: var(--deep-champagne)
 }
-
 /* -------------featured section styles end  */
 /*  main styles end  */
 /* -------------------------- */
