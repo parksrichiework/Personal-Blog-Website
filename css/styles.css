@@ -4,8 +4,8 @@
     --raisin-black: #272932;
     --alice-blue: #e7ecef;
     --skobeloff: #0f7173;
+    --skobeloff-70: #0f7173bd;
     --red-salsa: #f05d5e;
-
     /* second pallete */
     --ruby-red: #A41623;
     --orange-pantone: #f85e00;
@@ -14,11 +14,9 @@
     --deep-champagne-70: #ffd19dc3;
     --gold-fusion: #918450;
     --gold-fusion-70: #918450c3;
-
     /* universal palette */
     --off-white:#f4f4f4;
    }
-
 /* universal classes styles start  */
 .container{
     display: grid;
@@ -58,7 +56,6 @@ body{
 }
 /* body styles end  */
 /* -------------------------- */
-
 /* header styles start  */
 header{
     width:100%;
@@ -74,7 +71,7 @@ nav{
     display: inherit;
     align-items: center;
     grid-gap:10px;
-    grid-template-columns: 10px 80px 250px auto auto 90px 10px;
+    grid-template-columns: 20px 80px 250px auto auto 90px 10px;
     grid-template-rows: 130px;
     grid-template-areas:
     "space1 logo space2 category about search";        
@@ -95,7 +92,6 @@ nav button{
     padding: 10px;
     color: var(--deep-champagne);
 }
-
 #nav1{
     grid-area: logo;
  }
@@ -106,9 +102,8 @@ nav button{
     grid-area: about;
  }
  #nav4{
-    grid-area: search;    
- }
- 
+    grid-area: search;       
+ } 
 /*  nav bar styles end  */
 /* -------------------------- */
 /* main styles start  */
@@ -127,9 +122,8 @@ main{
 /*-------------- featured section styles start  */
 #featured{
     width: 100%;
-    height: 1100px;
-    background-image: url(../img/featured-food-img.jpg);
-    /* background-size:cover; */
+    height: 1200px;
+    background-image: url(../img/featured-food-img.jpg);    
     background-position: center;
     background-repeat: no-repeat;   
     display: inherit;
@@ -137,7 +131,7 @@ main{
     justify-content: center;    
     grid-gap: 20px;
     grid-template-columns: 1fr;
-    grid-template-rows: 600px 100px 100px 100px;
+    grid-template-rows: 700px 100px 100px 100px;
     grid-template-areas:
     " space"
     " title"
@@ -165,15 +159,46 @@ main{
     color: var(--deep-champagne)
 }
 /* -------------featured section styles end  */
+/* ------------------------ */
+/* other blogs styles start  */
+#other-posts h1{
+    font-size: 40pt;
+    color: var(--deep-champagne);
+}
+#other-posts h2{
+    font-size: 25pt;
+}
+#blog-post1{
+    background-image: url(../img/blog1-img.jpg);
+    background-color: var(--skobeloff-70);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+#blog-post2{
+    background-image: url(../img/blog2-img.jpg);
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+/* other blogs styles end  */
+/* ----------- */
+ /* category styles start  */
+ .categories{
+    
+ }
+ /* category styles end  */
+ /* -----------------  */
 /*  main styles end  */
 /* -------------------------- */
 /* footer styles start  */
-
 #footer{
     grid-area: footer;
 }
-
-
 /* MEDIA STYLES TEMPLATE (below) 
 @media(max-width: 320px)
 @media(min-width: 901px)
