@@ -82,15 +82,15 @@ nav img{
 }
 nav a{
     text-decoration: none;
-    color: var(--raisin-black);    
+    color: var(--off-white);        
 }
 nav button{
-    background-color: var(--orange-pantone);
+    background-color: var(--skobeloff);
     border-radius: 50px;
-    border: solid 1px var(--orange-pantone);
+    border: solid 4px var(--off-white);
     font-size: 30px;
     padding: 10px;
-    color: var(--deep-champagne);
+    color: var(--skobeloff);
 }
 #nav1{
     grid-area: logo;
