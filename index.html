@@ -30,9 +30,7 @@
                     <div id="nav4">
                         <a id="" href="#">
                             <img src="img/search-icon.png" alt="Image of search icon">
-                        </a>
-                        <!-- <input type="text" placeholder="Search">                                               
-                        <input type="submit" value="search"> -->
+                        </a>                        
                     </div>                  
                 </nav>                
                 <div id="welcome-message-container" class="container">
@@ -64,6 +62,13 @@
                                 <h3>Vg</h3>
                             </a>
                         </div>
+                        <div id="featured4" class="box">
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
+                        </div>
                     </div>
                     <!-- other blog posts  -->
                     <div id="other-posts" class="container other">
@@ -71,17 +76,21 @@
                             <h1>
                                 Blog Post 01
                             </h1>
-                            <h2>
-                                Price Breakdown: $12.99
-                            </h2>
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
                         </div>
                         <div id="blog-post2" class="box">
                             <h1>
                                 Blog Post 02
                             </h1>
-                            <h2>
-                                Price Breakdown: $5.99
-                            </h2>
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
                         </div>             
                     </div>                    
                     <!-- categories section  -->
@@ -125,16 +134,20 @@
                     </div>
                     <!-- browse recipe container  -->
                     <div id="browse-recipe-container" class="container">
-                        <div id="browse">
-                            <a class="box">
+                        <div id="browse" class="box">
+                            <a id="browse-recipe-title">
                                 <h1>Browse all Recipes</h1>
                             </a>
+                            <div id="browse-recipe-search" class="box">
+                                <input type="text" placeholder="Search">                                               
+                                <input type="submit" value="search">
+                            </div>
                         </div>
                     </div>
                     <!-- subscribe container  -->
-                    <div id="subscribe" class="box">
-                        <form>
-                            <label for="subscribe">Never miss a 'tique!:</label>
+                    <div id="subscribe" class="container">
+                        <form class="box">
+                            <label for="subscribe">Never miss a post!:</label>
                             <input type="text" id="subscribe-name" name="fname" placeholder="First name">
                             <input type="email" id="subscribe-mail" name="email" placeholder="email@contact.com">                        
                             <input type="submit" id="submit-button" value="Submit">
