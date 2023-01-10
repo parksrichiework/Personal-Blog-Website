@@ -44,11 +44,19 @@
 /* body styles start  */
 body{
     margin:0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width:100%;
     height:auto;    
     background-color: var(--deep-champagne);
+    background-image: url(../img/landing-page-bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover; 
+    color: var(--raisin-black);
     grid-template-columns: 100%;
-    grid-template-rows: 125px auto auto; 
+    /* gap: 300px; */
+    grid-template-rows: 425px auto auto; 
     grid-template-areas:
     "header"
     "main"
@@ -62,9 +70,9 @@ header{
     height: 130px;
     background-color: var(--red-salsa);
     margin:0;
-    grid-area: header;    
+    grid-area: header;
+    grid-template-rows: auto 300px;    
 }
-/*  header styles end  */
 /* -------------------------- */
 /* nav bar styles start  */
 nav{
@@ -72,7 +80,7 @@ nav{
     align-items: center;
     grid-gap:10px;
     grid-template-columns: 20px 80px 250px auto auto 90px 10px;
-    grid-template-rows: 130px;
+    grid-template-rows: 128px;
     grid-template-areas:
     "space1 logo space2 category about search";        
 }
@@ -106,11 +114,28 @@ nav button{
  } 
 /*  nav bar styles end  */
 /* -------------------------- */
+ /* welcome message styles start  */
+#welcome-message-container{
+    height: 300px;
+    background-color: var(--red-salsa);
+    
+}
+#welcome-message{
+    color: var(--off-white);
+    font-size: 35pt;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* welcome message styles end  */
+/* -----------------  */
+/*  header styles end  */
+/* ------------------  */
 /* main styles start  */
 main{
     margin:0;
     grid-template-columns: 100%;
-    gap: 50px;
+    gap: 500px;
 }
 #main{
     width: 100%;    
@@ -140,7 +165,7 @@ main{
 }
 #featured1{
     grid-area: title;    
-    font-size: 60pt;
+    font-size: 50pt;
     color: var(--deep-champagne);
     background-color: var(--gold-fusion-70);    
     padding: 30px 0px;        
@@ -191,9 +216,13 @@ main{
  /* category styles start  */
  #categories{
   grid-template-columns: repeat(6, 100px);
-  grid-template-areas: 
+  grid-template-areas:
+  "br br br br br br br" 
   "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2";
   gap:50px;  
+ }
+ #browse-title{
+    grid-area: br;
  }
  #vegan-cat{
     grid-area: vegan;

@@ -2,8 +2,8 @@
     <html>
         <head>
             <meta charset="utf-8">
-            <title> Food Critique Blog </title>
-            <meta name="description" content="A webpage for a food critique blog">
+            <title> Personal Food Blog </title>
+            <meta name="description" content="A webpage for a personal food blog">
             <link rel="stylesheet" type="text/css" href="css/styles.css">
             <link rel="icon" href="img/food-logo.png" alt="Image of Website logo" title="Website logo">
             <!-- TODO: ADD FONT LINKS HERE -->
@@ -34,7 +34,14 @@
                         <!-- <input type="text" placeholder="Search">                                               
                         <input type="submit" value="search"> -->
                     </div>                  
-                </nav>           
+                </nav>                
+                <div id="welcome-message-container" class="container">
+                    <div id="welcome-message" class="box">                        
+                        <h1>
+                            Welcome to our page!
+                        </h1>                                               
+                    </div>                
+                </div>
             </header>
             <!-- container for main content  -->
             <div id="main-container" class="container">
@@ -58,6 +65,7 @@
                             </a>
                         </div>
                     </div>
+                    <!-- other blog posts  -->
                     <div id="other-posts" class="container other">
                         <div id="blog-post1" class="box">
                             <h1>
@@ -75,37 +83,55 @@
                                 Price Breakdown: $5.99
                             </h2>
                         </div>             
-                    </div>
+                    </div>                    
+                    <!-- categories section  -->
                     <div id="categories" class="container">
+                        <!-- browse by category title  -->
+                        <div id="browse-title" class="box">
+                            <h1>
+                                Browse by category:
+                            </h1>
+                        </div>
+                        <!-- icon for vegan category  -->
                         <div id="vegan-cat" class="box">
                             <a href="#vegan-section" class="category-icon">
                                 V
                             </a>
                         </div>
+                        <!-- icon for vegetarian category  -->
                         <div id="vegetarian-cat" class="box">
                             <a href="#vegetarian-section" class="category-icon">
                                 Vg
                             </a>
                         </div>
+                        <!-- icon for sugar-free category  -->
                         <div id="sugar-free-cat" class="box">
                             <a href="#sugar-free-section" class="category-icon">
                                 SF
                             </a>
                         </div>
+                        <!-- icon for non-alcoholic category  -->
                         <div id="non-alcoholic-cat" class="box">
                             <a href="#non-alcoholic-section"  class="category-icon">
                                 <p>NA</p>
                             </a>
                         </div>
+                        <!-- icon for dairy-free category  -->
                         <div id="dairy-free-cat" class="box">
                             <a href="#dairy-free-section" class="category-icon">
                                 DF
                             </a>
                         </div>
                     </div>
-                    <a class="box">
-                        <h1>Browse all Recipes</h1>
-                    </a>
+                    <!-- browse recipe container  -->
+                    <div id="browse-recipe-container" class="container">
+                        <div id="browse">
+                            <a class="box">
+                                <h1>Browse all Recipes</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- subscribe container  -->
                     <div id="subscribe" class="box">
                         <form>
                             <label for="subscribe">Never miss a 'tique!:</label>
