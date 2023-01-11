@@ -351,14 +351,14 @@ footer img{
 /* ----------- */
  } 
  /* MEDIA STYLES: Tablet end  */
- /* ----------------- */
- /* ------------------- */
+ /* ----------------------------------------------------------- */
+ /* ----------------------------------------------------------- */
   /* MEDIA STYLES: Desktop start  */
   @media(min-width: 990px){
     /* ------------------ */
 /* body styles start  */
 body{   
-    grid-template-rows: 225px auto auto; 
+    grid-template-rows: 275px auto auto; 
     grid-template-areas:
     "header"
     "main"
@@ -368,19 +368,15 @@ body{
     /* ------------ */
 /* header styles start      */
     header{    
-    grid-template-rows: auto 100px;    
+    grid-template-rows: 125px 100px;    
 } 
 /* header styles end  */
 /* ----------------- */
 /* nav bar styles start  */
-nav{
-    display: inherit;
-    align-items: center;
-    grid-gap:10px;
+nav{    
     grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
     grid-template-rows: 125px;
-    grid-template-areas:
-    "space1 logo space2 category about search";        
+    background-color: var(--deep-champagne-70);           
 }
 #nav2,
 #nav3{
@@ -389,18 +385,6 @@ nav{
     background-color: var(--red-salsa);    
     border: none;           
 }
-#nav1{
-    grid-area: logo;
- }
- #nav2{
-    grid-area: category;
- }
- #nav3{
-    grid-area: about;
- }
- #nav4{
-    grid-area: search;       
- } 
 /*  nav bar styles end  */
 /* ------------ */
  /* welcome message styles start  */
@@ -409,8 +393,8 @@ nav{
     background-color: var(--red-salsa);    
 }
 #welcome-message{
-    color: var(--raisin-black);
-    font-size: 35pt;
+    color: var(--off-white);
+    font-size: 20pt;
     align-items: center;
     justify-content: center;
     flex-direction: column;
