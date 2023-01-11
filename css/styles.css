@@ -263,9 +263,7 @@ main{
  /* -----------------  */
  /* browse recipes section styles start */
 #browse-recipe-container{
-    background-color: var(--red-salsa);    
-}
-#browse{
+    background-color: var(--red-salsa);
     gap: 10px;
     grid-template-rows: 300px 50px 100px 300px;
     grid-template-areas: 
