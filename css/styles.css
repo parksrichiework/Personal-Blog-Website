@@ -93,12 +93,12 @@ nav img{
 }
 nav a{
     text-decoration: none;
-    color: var(--off-white);        
+    color: var(--raisin-black);        
 }
 nav button{
     background-color: var(--red-salsa);
     border-radius: 50px;
-    border: solid 4px var(--off-white);
+    border: solid 4px var(--raisin-black);
     font-size: 30px;
     padding: 10px;
     color: var(--skobeloff);
@@ -124,7 +124,7 @@ nav button{
     
 }
 #welcome-message{
-    color: var(--ruby-red);
+    color: var(--raisin-black);
     font-size: 35pt;
     align-items: center;
     justify-content: center;
