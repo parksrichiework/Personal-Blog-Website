@@ -262,16 +262,26 @@ main{
  /* category styles end  */
  /* -----------------  */
  /* browse recipes section styles start */
+#browse-recipe-container{
+    background-color: var(--red-salsa);    
+}
 #browse{
-    flex-direction: column;
+    gap: 10px;
+    grid-template-rows: 300px 50px 100px 300px;
+    grid-template-areas: 
+    "brspace1"
+    "brtitle"
+    "brsearch"
+    "brspace2";          
 }
 #browse-recipe-title{
     font-size: 20pt;
+    flex-direction: column;
+    grid-area: brtitle;        
 }
-#browse-recipe-search{
-    width: 100%;
-    height: auto;
-    font-size: 20pt;
+#browse-recipe-search{    
+    grid-area: brsearch;
+    width: 100%;  
 }
  /* browse recipes section styles end  */
  /* ------------------ */
