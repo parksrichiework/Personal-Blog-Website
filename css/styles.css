@@ -336,6 +336,8 @@ footer img{
 }
  /* footer styles end  */
  /* ----------------  */
+ /* --------------- */
+ /* MEDIA STYLES: MEDIUM start  */
  @media(min-width: 901px){
     /* ------------ */
  /* welcome message styles start  */
@@ -353,6 +355,9 @@ footer img{
 /* welcome message styles end  */
 /* ----------- */
  } 
+ /* MEDIA STYLES: MEDIUM end  */
+ /* ----------------- */
+ /* ------------------- */
 /* MEDIA STYLES TEMPLATE (below) 
 @media(max-width: 320px)
 @media(min-width: 901px){
