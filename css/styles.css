@@ -307,10 +307,34 @@ main{
  /* ------------------ */
 /*  main styles end  */
 /* -------------------------- */
-/* footer styles start  */
-#footer{
-    grid-area: footer;
+ /* footer styles start  */
+ footer{
+    background-color: var(--raisin-black);
+    grid-template-columns: auto;
+    grid-template-rows: 200px;
+    gap: 10px;
+    grid-template-areas:     
+    "allrights shareop"    
+    ;
 }
+footer img{
+    width: fit-content;
+    height: 100px;
+}
+#all-rights{
+    grid-area: allrights;
+    color: var(--off-white);
+    font-size: 20pt;
+}
+#share-options{
+   grid-area: shareop;
+   width: 100%;
+   gap: 50px;
+   height: auto;  
+}
+ /* footer styles end  */
+ /* ----------------  */
+
 /* MEDIA STYLES TEMPLATE (below) 
 @media(max-width: 320px)
 @media(min-width: 901px)
