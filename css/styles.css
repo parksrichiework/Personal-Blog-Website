@@ -124,7 +124,7 @@ nav button{
     
 }
 #welcome-message{
-    color: var(--off-white);
+    color: var(--ruby-red);
     font-size: 35pt;
     align-items: center;
     justify-content: center;
@@ -138,8 +138,7 @@ nav button{
 main{
     margin:0;
     grid-template-columns: 100%;
-    grid-template-rows: auto;
-    gap: 150px;
+    grid-template-rows: auto;    
 }
 #main{
     width: 100%;    
@@ -232,12 +231,15 @@ main{
 }
 /* other blogs styles end  */
 /* ----------- */
- /* category styles start  */
+ /* browse by category styles start  */
  #categories{
   grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 300px auto auto 300px;
   grid-template-areas:
+  "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 "
   "br br br br br br br" 
-  "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2";
+  "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
+  "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
   gap:50px;  
  }
  #browse-title{
@@ -259,7 +261,7 @@ main{
  #dairy-free-cat{
     grid-area:dairyfree;
  }
- /* category styles end  */
+ /* browse by category styles end  */
  /* -----------------  */
  /* browse recipes section styles start */
 #browse-recipe-container{
@@ -282,6 +284,26 @@ main{
     width: 100%;  
 }
  /* browse recipes section styles end  */
+ /* ------------------ */
+ /* subscribe form styles start  */
+ #subscribe-form-container{
+    background-color: var(--rajah);
+    grid-template-rows: 300px 100px 100px 300px;
+    grid-template-areas: 
+    "subspace1"
+    "subtitle"
+    "subform"    
+    "subspace2";
+ }
+ #subscribe-title{
+    font-size: 20pt;
+    grid-area: subtitle;
+ }
+ #subscribe-form{
+    flex-direction: row;
+    grid-area: subform;
+ }
+/* subscribe form styles end  */
  /* ------------------ */
 /*  main styles end  */
 /* -------------------------- */
