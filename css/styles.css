@@ -19,7 +19,10 @@
     /* universal palette */
     --off-white:#f4f4f4;
    }
-/* universal classes styles start  */
+   /* --------------------- */
+/* MEDIA STYLES MOBILE start  */
+
+   /* universal classes styles start  */
 .container{
     display: grid;
 }
@@ -334,11 +337,12 @@ footer img{
    height: auto;  
 }
  /* footer styles end  */
+/* MEDIA STYLES MOBILE end  */
  /* ----------------------------------------------------------------  */
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(min-width: 600px) and (max-width: 900px){
+ @media(min-width: 600px) and (max-width: 949px){
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container{
@@ -355,7 +359,7 @@ footer img{
  /* ----------------------------------------------------------- */
  /* ----------------------------------------------------------- */
   /* MEDIA STYLES: Desktop start  */
-  @media(min-width: 950px){
+@media(min-width: 950px){
     .category-icon{        
         font-size: 20pt;
         width: 20px;
@@ -363,165 +367,165 @@ footer img{
         padding:30px;        
      }
     /* ------------------ */
-/* body styles start  */
-body{   
-    grid-template-rows: 275px auto auto; 
-    grid-template-areas:
-    "header"
-    "main"
-    "footer";
-}
-/* body styles end  */
+    /* body styles start  */
+    body{   
+        grid-template-rows: 275px auto auto; 
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    }
+    /* body styles end  */
+        /* ------------ */
+    /* header styles start      */
+        header{    
+        grid-template-rows: 125px 100px;    
+    } 
+    /* header styles end  */
+    /* ----------------- */
+    /* nav bar styles start  */
+    nav{    
+        grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
+        grid-template-rows: 125px;
+        background-color: var(--deep-champagne-70);           
+    }
+    #nav2,
+    #nav3{
+        text-decoration: none;
+        color: var(--raisin-black);
+        background-color: var(--red-salsa);    
+        border: none;           
+    }
+    /*  nav bar styles end  */
     /* ------------ */
-/* header styles start      */
-    header{    
-    grid-template-rows: 125px 100px;    
-} 
-/* header styles end  */
-/* ----------------- */
-/* nav bar styles start  */
-nav{    
-    grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
-    grid-template-rows: 125px;
-    background-color: var(--deep-champagne-70);           
-}
-#nav2,
-#nav3{
-    text-decoration: none;
-    color: var(--raisin-black);
-    background-color: var(--red-salsa);    
-    border: none;           
-}
-/*  nav bar styles end  */
-/* ------------ */
- /* welcome message styles start  */
- #welcome-message-container{
-    height: 150px;
-    background-color: var(--red-salsa);    
-}
-#welcome-message{
-    color: var(--off-white);
-    font-size: 20pt;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-/* welcome message styles end  */
-/* -----------------  */
-/* main styles start  */
-main{   
-    grid-template-columns: 100px auto auto 100px;
-    grid-template-rows: 800px 500px auto;
-    grid-template-areas: 
-    "mainblank1 mainfeatured mainother mainblank2"
-    "mainblank1 mainbrcat mainbrrecipe mainblank2"
-    "mainblank1 mainsub mainsub mainblank2";    
-}
-/*-------------- featured section styles start  */
-#featured{
-    height:auto;
-    background-size: cover;
-    grid-area:mainfeatured;
-    grid-template-rows: 350px 90px 50px 50px 80px;           
-}
-#featured1{        
-    font-size: 30pt;        
-    padding: 20px;        
-}
-#featured2{
-    grid-area: price;
-    font-size: 20pt;
-    color: var(--off-white);    
-}
-#featured3{
-    grid-area: ftcategory;
-    display:grid;
-    font-size: 35pt;
-    gap: 0;
-    grid-template-columns: 100px 100px;
-    color: var(--deep-champagne)
-}
-#featured4{
-    grid-area: ftreadmore;      
-}
-#featured4 a{
-    background-color: var(--skobeloff);
-    color: var(--off-white);
-    width: auto;
-    font-size: 10pt;
-    padding: 0px 20px; 
-}
-/* -------------featured section styles end  */
-/* ------------------------ */
-/* other blogs styles start  */
-#other-posts{
-    grid-area: mainother;    
-    grid-template-rows: repeat(2, 400px);    
-}        
-}
-/* other blogs styles end  */
-/* ----------- */
-/* main styles end  */
-/* --------------- */
- /* browse by category styles start  */
- #categories{
-    grid-area: mainbrcat;    
-    grid-template-rows: 70px auto auto 100px;   
-    gap:25px;  
-   }  
-   /* browse by category styles end  */
-   /* -----------------  */
-   /* browse recipes section styles start */
-  #browse-recipe-container{
-    grid-area: mainbrrecipe;
-    gap: 10px;
-    grid-template-rows: 140px 50px 100px 300px;          
-  }  
-   /* browse recipes section styles end  */
-   /* ------------------ */
-   /* subscribe form styles start  */
-   #subscribe-form-container{
-      grid-area: mainsub;
-   }
-   #subscribe-title{
-      font-size: 20pt;
-      grid-area: subtitle;
-   }
-   #subscribe-form{
-      flex-direction: row;
-      grid-area: subform;
-   }
-  /* subscribe form styles end  */
-   /* ------------------ */
-  /*  main styles end  */
-  /* -------------------------- */
-   /* footer styles start  */
-   footer{
-      background-color: var(--raisin-black);
-      grid-template-columns: auto;
-      grid-template-rows: 200px;
-      gap: 10px;
-      grid-template-areas:     
-      "allrights shareop"    
-      ;
-  }
-  footer img{
-      width: fit-content;
-      height: 100px;
-  }
-  #all-rights{
-      grid-area: allrights;
-      color: var(--off-white);
-      font-size: 20pt;
-  }
-  #share-options{
-     grid-area: shareop;
-     width: 100%;
-     gap: 50px;
-     height: auto;  
-  }
-   /* footer styles end  */
- 
+    /* welcome message styles start  */
+    #welcome-message-container{
+        height: 150px;
+        background-color: var(--red-salsa);    
+    }
+    #welcome-message{
+        color: var(--off-white);
+        font-size: 20pt;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* welcome message styles end  */
+    /* -----------------  */
+    /* main styles start  */
+    main{   
+        grid-template-columns: 100px auto auto 100px;
+        grid-template-rows: 800px 500px auto;
+        grid-template-areas: 
+        "mainblank1 mainfeatured mainother mainblank2"
+        "mainblank1 mainbrcat mainbrrecipe mainblank2"
+        "mainblank1 mainsub mainsub mainblank2";    
+    }
+    /*-------------- featured section styles start  */
+    #featured{
+        height:auto;
+        background-size: cover;
+        grid-area:mainfeatured;
+        grid-template-rows: 350px 90px 50px 50px 80px;           
+    }
+    #featured1{        
+        font-size: 30pt;        
+        padding: 20px;        
+    }
+    #featured2{
+        grid-area: price;
+        font-size: 20pt;
+        color: var(--off-white);    
+    }
+    #featured3{
+        grid-area: ftcategory;
+        display:grid;
+        font-size: 35pt;
+        gap: 0;
+        grid-template-columns: 100px 100px;
+        color: var(--deep-champagne)
+    }
+    #featured4{
+        grid-area: ftreadmore;      
+    }
+    #featured4 a{
+        background-color: var(--skobeloff);
+        color: var(--off-white);
+        width: auto;
+        font-size: 10pt;
+        padding: 0px 20px; 
+    }
+    /* -------------featured section styles end  */
+    /* ------------------------ */
+    /* other blogs styles start  */
+    #other-posts{
+        grid-area: mainother;    
+        grid-template-rows: repeat(2, 400px);    
+    }        
+    }
+    /* other blogs styles end  */
+    /* ----------- */
+    /* main styles end  */
+    /* --------------- */
+    /* browse by category styles start  */
+    #categories{
+        grid-area: mainbrcat;    
+        grid-template-rows: 70px auto auto 100px;   
+        gap:25px;  
+    }  
+    /* browse by category styles end  */
+    /* -----------------  */
+    /* browse recipes section styles start */
+    #browse-recipe-container{
+        grid-area: mainbrrecipe;
+        gap: 10px;
+        grid-template-rows: 140px 50px 100px 300px;          
+    }  
+    /* browse recipes section styles end  */
+    /* ------------------ */
+    /* subscribe form styles start  */
+    #subscribe-form-container{
+        grid-area: mainsub;
+    }
+    #subscribe-title{
+        font-size: 20pt;
+        grid-area: subtitle;
+    }
+    #subscribe-form{
+        flex-direction: row;
+        grid-area: subform;
+    }
+    /* subscribe form styles end  */
+    /* ------------------ */
+    /*  main styles end  */
+    /* -------------------------- */
+    /* footer styles start  */
+    footer{
+        background-color: var(--raisin-black);
+        grid-template-columns: auto;
+        grid-template-rows: 200px;
+        gap: 10px;
+        grid-template-areas:     
+        "allrights shareop"    
+        ;
+    }
+    footer img{
+        width: fit-content;
+        height: 100px;
+    }
+    #all-rights{
+        grid-area: allrights;
+        color: var(--off-white);
+        font-size: 20pt;
+    }
+    #share-options{
+        grid-area: shareop;
+        width: 100%;
+        gap: 50px;
+        height: auto;  
+    }
+    /* footer styles end  */
+    
  /* MEDIA STYLES: Dekstop end  */
  /* ----------------- */
  /* ------------------- */
