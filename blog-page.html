@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title> Featured Blog Post </title>
+            <meta name="description" content="A webpage for the featured blog post of the personal food blog">
+            <link rel="stylesheet" type="text/css" href="css/featured-styles.css">
+            <link rel="icon" href="img/food-logo.png" alt="Image of Website logo" title="Website logo">
+            <!-- TODO: ADD FONT LINKS HERE -->
+            <!-- <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&amp;display=swap" rel="stylesheet"> -->
+        </head>
+        <body id="body" class="container">  
+            <header id="header" class="container">            
+                <nav id="nav" class="container">                                       
+                    <a id="nav1" href="#home">                        
+                        <img src="img/food-logo.png" alt="Image of Website Logo">
+                    </a>                                                  
+                    <a href="#categories" id="nav2" class="box">                        
+                            Categories                        
+                    </a>                   
+                    <a href="#about" id="nav3" class="box">
+                            About
+                    </a>                    
+                    <div id="nav4">
+                        <a id="" href="#">
+                            <img src="img/search-icon.png" alt="Image of search icon">
+                        </a>                        
+                    </div>                  
+                </nav>                
+                <div id="welcome-message-container" class="container">
+                    <div id="welcome-message" class="box">                        
+                        <h1>
+                            Welcome to our page!
+                        </h1>                                               
+                    </div>                
+                </div>
+            </header>
+            <!-- container for main content  -->            
+            <main id="main" class="container"> 
+                <!-- featured content container             -->
+                <div id="featured" class="container">
+                        <!-- featured content  -->
+                        <title id="featured1" class="box feature-title">                            
+                            Featured Blog Post Title                          
+                        </title>
+                        <h2 id="featured2" class="box feature-price">
+                            Price Breakdown: $10.99
+                        </h2>
+                        <div id="featured3" class="box feature-category">                            
+                            <a href="#vegan-section" class="category-icon">
+                                <h3>V</h3>
+                            </a>                            
+                            <a href="#vegetarian-section" class="category-icon">
+                                <h3>Vg</h3>
+                            </a>
+                        </div>
+                        <div id="featured4" class="box">
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
+                        </div>
+                </div>
+                 <!-- other blog posts  -->
+                <div id="other-posts" class="container other">
+                        <div id="blog-post1" class="box">
+                            <h1>
+                                Blog Post 01
+                            </h1>
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
+                        </div>
+                        <div id="blog-post2" class="box">
+                            <h1>
+                                Blog Post 02
+                            </h1>
+                            <a href="#">
+                                <h2>
+                                    Read more
+                                </h2>
+                            </a>
+                        </div>             
+                </div>                    
+                <!-- categories section  -->
+                <div id="categories" class="container">
+                        <!-- browse by category title  -->
+                        <div id="browse-title" class="box">
+                            <h1>
+                                Browse by category:
+                            </h1>
+                        </div>
+                        <!-- icon for vegan category  -->
+                        <div id="vegan-cat" class="box">
+                            <a href="#vegan-section" class="category-icon">
+                                V
+                            </a>
+                        </div>
+                        <!-- icon for vegetarian category  -->
+                        <div id="vegetarian-cat" class="box">
+                            <a href="#vegetarian-section" class="category-icon">
+                                Vg
+                            </a>
+                        </div>
+                        <!-- icon for sugar-free category  -->
+                        <div id="sugar-free-cat" class="box">
+                            <a href="#sugar-free-section" class="category-icon">
+                                SF
+                            </a>
+                        </div>
+                        <!-- icon for non-alcoholic category  -->
+                        <div id="non-alcoholic-cat" class="box">
+                            <a href="#non-alcoholic-section"  class="category-icon">
+                                <p>NA</p>
+                            </a>
+                        </div>
+                        <!-- icon for dairy-free category  -->
+                        <div id="dairy-free-cat" class="box">
+                            <a href="#dairy-free-section" class="category-icon">
+                                DF
+                            </a>
+                        </div>
+                </div>
+                <!-- browse recipe container  -->
+                <div id="browse-recipe-container" class="container">                        
+                            <a id="browse-recipe-title"class="box">
+                                <h1>Browse all Recipes</h1>
+                            </a>                           
+                            <div id="browse-recipe-search" class="box">
+                                <input type="text" placeholder="Search">                                               
+                                <input type="submit" value="Search">
+                            </div>                                                
+                </div>
+                <!-- subscribe container  -->
+                <div id="subscribe-form-container" class="container">
+                        <label id="subscribe-title" class="box" for="subscribe">
+                            <h1>Never miss a post</h1>
+                        </label>
+                        <form id="subscribe-form" class="box">                            
+                            <input type="text" id="subscribe-name" name="fname" placeholder="First Name">
+                            <input type="email" id="subscribe-mail" name="email" placeholder="email@contact.com">                        
+                            <input type="submit" id="submit-button" value="Subscribe">
+                            <input type="reset" id="submit-reset-button">
+                        </form>
+                </div>
+            </main>            
+            <footer id="footer" class="container">
+                <h4 id="all-rights" class="box">
+                    All Rights Reserved 2023
+                </h4>
+                <div id="share-options" class="box">
+                    <!-- TODO: ADD TWITTER ICON IMG HERE  -->
+                    <a href="https://twitter.com/" id="twitter-link">
+                        <img src="img/twitter-logo.png" alt="Image of icon for twitter logo">
+                    </a>
+                    <!-- TODO: ADD INSTAGRAM ICON IMG HERE  -->
+                    <a href="" id="instagram-link">
+                        <img src="img/instagram-logo.png" alt="Image of icon for image instagram logo">
+                    </a>
+                    <!-- TODO: ADD TIKTOK ICON IMG HERE  -->
+                    <a href="https://www.tiktok.com/" id="tiktok-link">
+                        <img src="img/tiktok-logo.png" alt="Image of icon for tiktok logo">
+                    </a>
+                </div>
+            </footer>    
+        </body>
+
+        
+            
+        
+    </html>
