@@ -136,25 +136,26 @@ nav img{
 /* ------------------  */
 /* main styles start  */
 main{
+    width: 100%;
     margin:0;
     grid-template-columns: 100%;
-    grid-template-rows: auto;    
-}
-#main{
-    width: 100%;    
-}
-#main-container{
-    grid-area: main;
-    
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "mainfeature1"
+    "mainother1"
+    "maincat1"
+    "mainrecipe1"
+    "mainsub1";
+    grid-area:main;    
 }
 /*-------------- featured section styles start  */
 #featured{
+    grid-area: mainfeature1;
     width: 100%;
     height: 1300px;
     background-image: url(../img/featured-food-img.jpg);    
     background-position: center;
-    background-repeat: no-repeat;   
-    display: inherit;
+    background-repeat: no-repeat;    
     align-items: center;
     justify-content: center;    
     grid-gap: 20px;
@@ -201,6 +202,7 @@ main{
 /* ------------------------ */
 /* other blogs styles start  */
 #other-posts{
+    grid-area: mainother1;
     grid-template-rows: repeat(2, 600px);    
 }
 #other-posts h1{
@@ -235,6 +237,7 @@ main{
 /* ----------- */
  /* browse by category styles start  */
     #categories{
+    grid-area: maincat1;
     grid-template-columns: repeat(6, 100px);
     grid-template-rows: 300px auto auto 300px;
     grid-template-areas:
@@ -267,6 +270,7 @@ main{
  /* -----------------  */
  /* browse recipes section styles start */
 #browse-recipe-container{
+    grid-area: mainrecipe1;
     background-color: var(--red-salsa);
     gap: 10px;
     grid-template-rows: 300px 50px 100px 300px;
@@ -289,6 +293,7 @@ main{
  /* ------------------ */
  /* subscribe form styles start  */
  #subscribe-form-container{
+    grid-area: mainsub1;
     background-color: var(--rajah);
     grid-template-rows: 300px 100px 100px 300px;
     grid-template-areas: 
@@ -340,7 +345,7 @@ footer img{
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(max-width: 990px){
+ @media(max-width: 768px){
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container{
@@ -367,7 +372,11 @@ footer img{
     /* ------------------ */
     /* body styles start  */
     body{   
-        grid-template-rows: 275px auto auto; 
+        grid-template-rows: 275px auto auto;
+        grid-template-areas:
+    "header"
+    "main"
+    "footer"; 
         }
     /* body styles end  */
         /* ------------ */
@@ -407,7 +416,7 @@ footer img{
     /* welcome message styles end  */
     /* -----------------  */
     /* main styles start  */
-    main{   
+    #main{   
         grid-template-columns: 100px auto auto 100px;
         grid-template-rows: 800px 500px auto;
         grid-template-areas: 
@@ -419,7 +428,7 @@ footer img{
     #featured{
         height:auto;
         background-size: cover;
-        grid-area:mainfeatured;
+        grid-area: mainfeatured;
         grid-template-rows: 350px 90px 50px 50px 80px;           
     }
     #featured1{        
@@ -455,8 +464,8 @@ footer img{
     #other-posts{
         grid-area: mainother;    
         grid-template-rows: repeat(2, 400px);    
-    }        
-    }
+    }      
+    
     /* other blogs styles end  */
     /* ----------- */
     /* main styles end  */
@@ -519,7 +528,7 @@ footer img{
         height: auto;  
     }
     /* footer styles end  */
-    
+}   
  /* MEDIA STYLES: Dekstop end  */
  /* ----------------- */
  /* ------------------- */
