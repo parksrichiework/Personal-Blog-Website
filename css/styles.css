@@ -345,7 +345,7 @@ footer img{
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(max-width: 768px){
+ @media(max-width: 991px){
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container{
