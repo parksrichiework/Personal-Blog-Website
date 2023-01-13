@@ -55,7 +55,6 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width:100%;
     height:auto;    
-    background-color: var(--deep-champagne);
     background-image: url(../img/landing-page-bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -63,7 +62,6 @@ body{
     background-size: cover; 
     color: var(--raisin-black);
     grid-template-columns: 100%;
-    /* gap: 300px; */
     grid-template-rows: 425px auto auto; 
     grid-template-areas:
     "header"
@@ -90,7 +88,7 @@ nav{
     grid-template-columns: 20px 80px 250px auto auto 90px 10px;
     grid-template-rows: 128px;
     grid-template-areas:
-    "space1 logo space2 category about search";        
+    "navspace1 logo navspace2 category about search";        
 }
 nav img{
     max-height: 80px;
@@ -342,7 +340,7 @@ footer img{
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(min-width: 600px) and (max-width: 949px){
+ @media(max-width: 990px){
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container{
@@ -359,7 +357,7 @@ footer img{
  /* ----------------------------------------------------------- */
  /* ----------------------------------------------------------- */
   /* MEDIA STYLES: Desktop start  */
-@media(min-width: 950px){
+@media(min-width: 992px){
     .category-icon{        
         font-size: 20pt;
         width: 20px;
@@ -370,11 +368,7 @@ footer img{
     /* body styles start  */
     body{   
         grid-template-rows: 275px auto auto; 
-        grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    }
+        }
     /* body styles end  */
         /* ------------ */
     /* header styles start      */
