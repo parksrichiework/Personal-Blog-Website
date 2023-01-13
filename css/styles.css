@@ -465,7 +465,20 @@ footer img{
         grid-area: mainother;    
         grid-template-rows: repeat(2, 400px);    
     }      
-    
+    #other-posts h1{
+        font-size: 20pt;
+        color: var(--deep-champagne);
+        background-color: var(--raisin-black-70);
+        padding: 20px 30px;
+    }
+    #other-posts h2{
+        font-size: 15pt;
+        color:var(--off-white);
+    }
+    #other-posts a{
+        background-color: var(--skobeloff);
+        padding: 0px 20px;
+    }
     /* other blogs styles end  */
     /* ----------- */
     /* main styles end  */
@@ -505,26 +518,26 @@ footer img{
     /* footer styles start  */
     footer{
         background-color: var(--raisin-black);
-        grid-template-columns: auto;
-        grid-template-rows: 200px;
+        grid-template-columns: 500px auto auto;
+        grid-template-rows: 100px;
         gap: 10px;
         grid-template-areas:     
-        "allrights shareop"    
+        "footerspace allrights shareop"    
         ;
     }
     footer img{
-        width: fit-content;
-        height: 100px;
+        width: 50px;
+        height: auto;
     }
     #all-rights{
         grid-area: allrights;
         color: var(--off-white);
-        font-size: 20pt;
+        font-size: 12pt;
     }
     #share-options{
         grid-area: shareop;
         width: 100%;
-        gap: 50px;
+        gap: 15px;
         height: auto;  
     }
     /* footer styles end  */
