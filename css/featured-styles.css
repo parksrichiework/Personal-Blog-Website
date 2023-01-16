@@ -7,6 +7,7 @@
     --skobeloff: #0f7173;
     --skobeloff-70: #0f7173bd;
     --red-salsa: #f05d5e;
+    --red-salsa-70: #f05d5dba;
     /* second pallete */
     --ruby-red: #A41623;
     --orange-pantone: #f85e00;
@@ -62,7 +63,7 @@ body{
     background-size: cover; 
     color: var(--raisin-black);
     grid-template-columns: 100%;
-    grid-template-rows: 425px auto auto; 
+    grid-template-rows: auto auto auto; 
     grid-template-areas:
     "header"
     "main"
@@ -73,15 +74,16 @@ body{
 /* header styles start  */
 header{
     width:100%;
-    height: 130px;
+    height: auto;
     background-color: var(--red-salsa);
     margin:0;
     grid-area: header;
-    grid-template-rows: auto 300px;    
+    grid-template-rows: auto 600px;    
 }
 /* -------------------------- */
 /* nav bar styles start  */
 nav{
+    height:fit-content;
     display: inherit;
     align-items: center;
     grid-gap:10px;
@@ -119,16 +121,30 @@ nav img{
 /*  nav bar styles end  */
 /* -------------------------- */
  /* welcome message styles start  */
-#welcome-message-container{
-    height: 300px;
-    background-color: var(--red-salsa);    
-}
-#welcome-message{
+ #welcome-message-container{
+    grid-template-rows: auto;
+    gap: 50px;
+    grid-template-areas:  
+    "welspace"
+    "weltitle"
+    "wellocation"
+    "welcategory";
+ }
+#welcome-title{
+    grid-area: weltitle;
     color: var(--raisin-black);
-    font-size: 35pt;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    font-size: 60pt;    
+}
+#location-icon{
+    height: 60px;
+}
+#location-container{
+    gap:30px;
+    grid-area: wellocation;
+}
+#welcome-category{
+    gap: 30px;
+    grid-area: welcategory;
 }
 /* welcome message styles end  */
 /* -----------------  */
