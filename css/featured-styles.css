@@ -137,6 +137,7 @@ nav img{
 }
 #location-icon{
     height: 60px;
+    border-radius: 50%;
 }
 #location-container{
     gap:30px;
