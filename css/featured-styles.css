@@ -200,8 +200,42 @@ main{
 /* ------------------------ */
 /* main about section styles start  */
 #about-section{
-    grid-area: mainabout;
-    height: 600px;
+    background-image: url(../img/team-photo.jpg);
+    background-color: var(--deep-champagne);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: screen;
+    grid-area: mainabout;   
+    grid-template-rows: 500px 300px 100px 200px 500px;
+    grid-template-areas:
+    "abtspace" 
+    "abttitle"
+    "abtdescription"
+    "abtmore"
+    "abtspace2";
+}
+#about-title{
+    grid-area: abttitle;
+    font-size: 45pt;
+    color: var(--skobeloff);
+}
+/* TODO: figure out why description is justified left  */
+#about-description{
+    grid-area: abtdescription;
+    font-size: 35pt;
+}
+#about-more{
+    grid-area: abtmore;    
+}
+#about-section h2{
+    font-size: 25pt;
+}
+#about-section a{
+    background-color: var(--raisin-black-70);
+    padding: 0px 20px;
+    color: var(--deep-champagne);        
 }
 /* main about section styles end  */
 /* -------------------------------------- */
