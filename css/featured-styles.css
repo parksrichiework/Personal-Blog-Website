@@ -201,8 +201,8 @@ main{
 /* ------------------------ */
 /* main about section styles start  */
 #about-section{
-    background-image: url(../img/team-photo.jpg);
-    background-color: var(--deep-champagne);
+    /* background-image: url(../img/team-photo.jpg); */
+    background-color: var(--deep-champagne-70);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
