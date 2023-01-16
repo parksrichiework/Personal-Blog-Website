@@ -203,10 +203,10 @@ main{
 #about-section{
     /* background-image: url(../img/team-photo.jpg); */
     background-color: var(--deep-champagne-70);
-    background-attachment: fixed;
+    /* background-attachment: fixed;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     background-blend-mode: screen;
     grid-area: mainabout;   
     grid-template-rows: 500px 300px 100px 200px 500px;
