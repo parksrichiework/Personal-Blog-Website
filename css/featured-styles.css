@@ -243,9 +243,16 @@ main{
 /* other blogs styles start  */
 #other-posts{
     grid-area: mainother;
-    grid-template-rows: repeat(2, 600px);    
+    grid-template-rows: 200px 600px 600px;    
 }
-#other-posts h1{
+#other-posts-title{
+    margin: 0;
+    font-size: 50pt;
+    color: var(--raisin-black);
+    background-color: var(--rajah);
+}
+#blog-post1 h1,
+#blog-post2 h1{
     font-size: 40pt;
     color: var(--deep-champagne);
     background-color: var(--raisin-black-70);
@@ -279,7 +286,7 @@ main{
     #categories{
     grid-area: maincategory;
     grid-template-columns: repeat(6, 100px);
-    grid-template-rows: 300px auto auto 300px;
+    grid-template-rows: 250px auto auto 300px;
     grid-template-areas:
     "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 "
     "br br br br br br br" 
