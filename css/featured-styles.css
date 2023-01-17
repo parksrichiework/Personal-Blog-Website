@@ -175,7 +175,7 @@ main{
     height: auto;         
     grid-gap: 50px;
     grid-template-columns: auto;
-    grid-template-rows: auto 425px 300px;
+    grid-template-rows: auto 425px 250px 100px;
     grid-template-areas:
     "ftphoto"
     "ftdescription"
@@ -203,13 +203,13 @@ main{
 /* ------------------------ */
 /* main about section styles start  */
 #about-section{
-    /* background-image: url(../img/team-photo.jpg); */
+    background-image: url(../img/team-photo.jpg);
     background-color: var(--deep-champagne-70);
-    /* background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; */
+    background-attachment: fixed;   
+    background-position: center;    
     background-blend-mode: screen;
+    background-repeat: no-repeat;
     grid-area: mainabout;   
     grid-template-rows: 500px 300px 200px 200px 500px;
     grid-template-areas:
@@ -221,7 +221,7 @@ main{
 }
 #about-title{
     grid-area: abttitle;
-    font-size: 50pt;
+    font-size: 60pt;
     color: var(--skobeloff);
 }
 #about-description{
@@ -237,7 +237,7 @@ main{
     font-size: 25pt;
 }
 #about-section a{
-    background-color: var(--raisin-black-70);
+    background-color: var(--raisin-black);
     padding: 0px 50px;
     color: var(--deep-champagne);        
 }
@@ -288,10 +288,10 @@ main{
 /* browse by category styles start  */
     #categories{
     grid-area: maincategory;
-    grid-template-columns: repeat(6, 100px);
+    grid-template-columns: 0 repeat(5, 100px) 0;
     grid-template-rows: 250px auto auto 300px;
     grid-template-areas:
-    "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 "
+    "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1"
     "br br br br br br br" 
     "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
     "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
@@ -395,18 +395,59 @@ footer img{
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(max-width: 991px){
+ @media(min-width: 500px) and (max-width: 991px){
     /* ------------ */
     /* welcome message styles start  */
-    #welcome-message-container{
-        height: 300px;
-        background-color: var(--red-salsa);    
-    }
-    #welcome-message{   
-        font-size: 20pt;    
-    }
+        #welcome-message-container{
+            height: 300px;
+            background-color: var(--red-salsa);    
+        }
+        #welcome-message{   
+            font-size: 20pt;            
+        }
+        #welcome-title{
+            color: var(--off-white);
+        }
     /* welcome message styles end  */
     /* ----------- */
+    /* main styles start  */
+    main{
+        
+        }
+        /* featured styles start  */
+        #ft-description{
+            grid-area: ftdescription;
+            text-align: justify;
+            margin: 0 100px;
+            font-size: 20pt;    
+         }
+         #ft-price-breakdown{
+            font-size: 2em;
+         }
+        /* featured styles end  */
+        /* ------------------ */
+        /* about section styles start  */
+        #about-title{
+            font-size: 3.5em;            
+        }
+        /* about section styles end  */
+        /* -------------------- */
+        /* category section start  */
+        #categories{
+            grid-area: maincategory;
+            grid-template-columns: auto;
+            grid-template-rows: 250px auto auto 300px;
+            grid-template-areas:
+            "ct1 ct2 ct2 ct2 ct2 ct2 ct1"
+            "ct1 br br br br br br" 
+            "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct1"
+            "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct1";
+            gap:50px;  
+            }
+        /* category section end  */
+        /* ------------------------------- */
+        /* main styles end  */
+    /* -------------------------------  */
     } 
     /* MEDIA STYLES: Tablet end  */
  /* ----------------------------------------------------------- */
