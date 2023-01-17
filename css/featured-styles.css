@@ -452,7 +452,7 @@ footer img{
     /* MEDIA STYLES: Tablet end  */
  /* ----------------------------------------------------------- */
  /* ----------------------------------------------------------- */
-  /* MEDIA STYLES: Desktop start  */
+  /* MEDIA STYLES: DESKTOP start  */
 @media(min-width: 992px){
     .category-icon{        
         font-size: 20pt;
@@ -463,17 +463,17 @@ footer img{
     /* ------------------ */
     /* body styles start  */
     body{   
-        grid-template-rows: 275px auto auto;
+        grid-template-rows: auto;
         grid-template-areas:
-    "header"
-    "main"
-    "footer"; 
+        "header"
+        "main"
+        "footer"; 
         }
     /* body styles end  */
         /* ------------ */
     /* header styles start      */
         header{    
-        grid-template-rows: 125px 100px;    
+        grid-template-rows: 125px 500px;    
     } 
     /* header styles end  */
     /* ----------------- */
@@ -506,14 +506,16 @@ footer img{
     }
     /* welcome message styles end  */
     /* -----------------  */
-    /* main styles start  */
+    /* main DESKTOP styles start  */
     #main{   
         grid-template-columns: 100px auto auto 100px;
-        grid-template-rows: 800px 500px auto;
+        grid-template-rows: auto;
         grid-template-areas: 
-        "mainblank1 mainfeatured mainother mainblank2"
-        "mainblank1 mainbrcat mainbrrecipe mainblank2"
-        "mainblank1 mainsub mainsub mainblank2";    
+        "m1 mainfeatured mainabout m2"
+        "m1 mainfeatured mainother m2"
+        "m1 mainfeatured mainother m2"
+        "m1 mainbrcat mainbrrecipe m2"
+        "m1 mainsub mainsub m2";    
     }
     /*-------------- featured section styles start  */
     #featured{
@@ -521,10 +523,47 @@ footer img{
         background-size: cover;
         grid-area: mainfeatured;
         grid-template-rows: 350px 90px 50px 50px 80px;           
-    }
-  
+    }    
     /* -------------featured section styles end  */
-    /* ------------------------ */
+    /* --------------------- */
+    /* about section styles start  */
+    #about-section{
+        background-image: url(../img/team-photo.jpg);
+        background-color: var(--deep-champagne-70);
+        background-size: cover;
+        background-attachment: fixed;   
+        background-position:right;    
+        background-blend-mode: screen;
+        background-repeat: no-repeat;
+        grid-area: mainabout;   
+        grid-template-rows: auto;
+        grid-template-areas:
+        "abtspace" 
+        "abttitle"
+        "abtdescription"
+        "abtmore"
+        "abtspace2";
+    }
+    #about-title{
+        grid-area: abttitle;
+        font-size: 25pt;
+        color: var(--skobeloff);
+    }
+    #about-description{
+        grid-area: abtdescription;
+        font-size: 25pt;        
+        margin: 0 150px;
+    }   
+    #about-section h2{
+        font-size: 15pt;
+    }
+    #about-section a{
+        background-color: var(--raisin-black);
+        padding: 0px 50px;
+        color: var(--deep-champagne);        
+    }
+    /* about section styles end  */
+    /* ----------------------- */    
     /* other blogs styles start  */
     #other-posts{
         grid-area: mainother;    
@@ -546,7 +585,7 @@ footer img{
     }
     /* other blogs styles end  */
     /* ----------- */
-    /* main styles end  */
+    
     /* --------------- */
     /* browse by category styles start  */
     #categories{
