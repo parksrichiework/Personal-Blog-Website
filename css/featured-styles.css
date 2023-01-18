@@ -397,7 +397,7 @@ footer img{
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(min-width: 500px) and (max-width: 991px){
+ @media(min-width: 500px) and (max-width: 991px){       
     /* ------------ */
     /* welcome message styles start  */
         #welcome-message-container{
@@ -450,6 +450,12 @@ footer img{
         /* ------------------------------- */
         /* main styles end  */
     /* -------------------------------  */
+    /* footer styles start  */
+            #footer{
+                grid-template-rows: 125px;
+            }
+    /* footer styles end  */
+    /* --------------------------------- */
     } 
     /* MEDIA STYLES: Tablet end  */
  /* ----------------------------------------------------------- */
@@ -465,7 +471,7 @@ footer img{
     /* ------------------ */
     /* body styles start  */
     body{   
-        gap: 30px;
+        gap: 30px;        
         grid-template-rows: auto;
         grid-template-areas:
         "header"
