@@ -330,7 +330,9 @@ main {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    flex-direction: column;
+    flex-direction: column;    
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
 }
 
 
@@ -340,6 +342,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
 }
 /* other blogs styles end  */
 /* ----------- */
@@ -716,12 +720,7 @@ footer img {
         background-color: var(--raisin-black-70);
     }
 
-
-    #blog-post1,
-    #blog-post2 {
-        background-color: var(--deep-champagne-30);
-        background-blend-mode: soft-light;
-    }    
+     
     /* other blogs styles end  */
     /* ----------- */
     

@@ -14,6 +14,7 @@
     --rajah-70: #ffb663b0;
     --deep-champagne: #ffd29d;
     --deep-champagne-70: #ffd19dc3;
+    --deep-champagne-30: #ffd19d4f;
     --gold-fusion: #918450;
     --gold-fusion-70: #918450c3;
     /* universal palette */
@@ -263,6 +264,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
 }
 
 
@@ -272,6 +275,8 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
 }
 /* other blogs styles end  */
 /* ----------- */
@@ -498,7 +503,7 @@ footer img {
     }
     /*-------------- featured section styles start  */
     #featured {
-        height:auto;
+        height: auto;
         background-size: cover;
         grid-area: mainfeatured;
         grid-template-rows: 350px 90px 50px 50px 80px;           
