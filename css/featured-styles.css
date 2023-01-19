@@ -1,4 +1,4 @@
-:root{
+:root {
     /* first pallete */
     --tumbleweed: #D8A47F;
     --raisin-black: #272932;
@@ -26,20 +26,20 @@
 /* MEDIA STYLES MOBILE start  */
 
    /* universal classes styles start  */
-.container{
+.container {
     display: grid;
 }
 
 
-.box{
-    display:flex;
+.box {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
 
-.category-icon{
-   display:flex;
+.category-icon {
+   display: flex;
    color: var(--deep-champagne);
    background-color: var(--raisin-black);
    font-size: 30pt;
@@ -53,7 +53,7 @@
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -61,11 +61,11 @@ a{
 /* universal classes styles end  */
 /* ----------------- */
 /* body styles start  */
-body{
+body {
     margin:0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     width:100%;
-    height:auto;    
+    height: auto;    
     background-image: url(../img/landing-page-bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -82,7 +82,7 @@ body{
 /* body styles end  */
 /* -------------------------- */
 /* header styles start  */
-header{
+header {
     width:100%;
     height: auto;
     background-color: var(--red-salsa);
@@ -92,8 +92,8 @@ header{
 }
 /* -------------------------- */
 /* nav bar styles start  */
-nav{
-    height:fit-content;
+nav {
+    height: fit-content;
     display: inherit;
     align-items: center;
     grid-gap:10px;
@@ -104,14 +104,14 @@ nav{
 }
 
 
-nav img{
+nav img {
     max-height: 80px;
     border-radius: 50%;
 }
 
 
 #nav2,
-#nav3{
+#nav3 {
     text-decoration: none;
     font-size: 20pt;
     color: var(--raisin-black);
@@ -122,28 +122,28 @@ nav img{
 }
 
 
-#nav1{
+#nav1 {
     grid-area: logo;
  }
 
 
- #nav2{
+ #nav2 {
     grid-area: category;
  }
 
 
- #nav3{
+ #nav3 {
     grid-area: about;
  }
 
 
- #nav4{
+ #nav4 {
     grid-area: search;       
  } 
 /*  nav bar styles end  */
 /* -------------------------- */
  /* welcome message styles start  */
- #welcome-message-container{
+ #welcome-message-container {
     grid-template-rows: auto;
     gap: 50px;
     grid-template-areas:  
@@ -154,7 +154,7 @@ nav img{
  }
 
 
-#welcome-title{
+#welcome-title {
     grid-area: weltitle;
     color: var(--raisin-black);
     font-size: 60pt;
@@ -162,20 +162,20 @@ nav img{
 }
 
 
-#location-icon{
+#location-icon {
     height: 60px;
     border-radius: 50%;
 }
 
 
-#location-container{
-    gap:30px;
+#location-container {
+    gap: 30px;
     grid-area: wellocation;
     font-size: 17pt;
 }
 
 
-#welcome-category{
+#welcome-category {
     gap: 30px;
     grid-area: welcategory;
 }
@@ -184,9 +184,9 @@ nav img{
 /*  header styles end  */
 /* ------------------  */
 /* main styles start  */
-main{
+main {
     width: 100%;
-    margin:0;
+    margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: 
@@ -199,7 +199,7 @@ main{
     grid-area:main;    
 }
 /*-------------- featured section styles start  */
-#featured{
+#featured {
     grid-area: mainfeature;
     width: 100%;
     height: auto;         
@@ -216,21 +216,21 @@ main{
 }
 
 
-#ft-photo{
+#ft-photo {
     grid-area: ftphoto;
     width: 100%;
     height: auto;      
 }
 
 
-#ft-description{
+#ft-description {
     grid-area: ftdescription;
     text-align: justify;
     margin: 0 100px;    
  }
 
 
-#ft-price-breakdown{
+#ft-price-breakdown {
     color: var(--off-white);
     grid-area: ftpricebreakdown;
     font-size: 27pt;
@@ -238,7 +238,7 @@ main{
 /* -------------featured section styles end  */
 /* ------------------------ */
 /* main about section styles start  */
-#about-section{
+#about-section {
     background-image: url(../img/team-photo.jpg);
     background-color: var(--deep-champagne-70);
     background-size: cover;
@@ -257,14 +257,14 @@ main{
 }
 
 
-#about-title{
+#about-title {
     grid-area: abttitle;
     font-size: 60pt;
     color: var(--skobeloff);
 }
 
 
-#about-description{
+#about-description {
     grid-area: abtdescription;
     font-size: 35pt;
     text-align: center;
@@ -272,17 +272,17 @@ main{
 }
 
 
-#about-more{
+#about-more {
     grid-area: abtmore;    
 }
 
 
-#about-section h2{
+#about-section h2 {
     font-size: 25pt;
 }
 
 
-#about-section a{
+#about-section a {
     background-color: var(--raisin-black);
     padding: 0px 50px;
     color: var(--deep-champagne);        
@@ -290,13 +290,13 @@ main{
 /* main about section styles end  */
 /* -------------------------------------- */
 /* other blogs styles start  */
-#other-posts{
+#other-posts {
     grid-area: mainother;
     grid-template-rows: 200px 600px 600px;    
 }
 
 
-#other-posts-title{
+#other-posts-title {
     margin: 0;
     font-size: 50pt;
     color: var(--raisin-black);
@@ -305,7 +305,7 @@ main{
 
 
 #blog-post1 h1,
-#blog-post2 h1{
+#blog-post2 h1 {
     font-size: 40pt;
     color: var(--deep-champagne);
     background-color: var(--raisin-black-70);
@@ -313,19 +313,19 @@ main{
 }
 
 
-#other-posts h2{
+#other-posts h2 {
     font-size: 25pt;
     color:var(--off-white);
 }
 
 
-#other-posts a{
+#other-posts a {
     background-color: var(--skobeloff);
     padding: 0px 50px;
 }
 
 
-#blog-post1{
+#blog-post1 {
     background-image: url(../img/blog1-img.jpg);       
     background-size: cover;
     background-position: center;
@@ -334,7 +334,7 @@ main{
 }
 
 
-#blog-post2{
+#blog-post2 {
     background-image: url(../img/blog2-img.jpg);    
     background-size: cover;
     background-position: center;
@@ -344,7 +344,7 @@ main{
 /* other blogs styles end  */
 /* ----------- */
 /* browse by category styles start  */
-    #categories{
+    #categories {
     grid-area: maincategory;
     grid-template-columns: 0 repeat(5, 100px) 0;
     grid-template-rows: 250px auto auto 300px;
@@ -353,41 +353,41 @@ main{
     "br br br br br br br" 
     "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
     "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
-    gap:50px;  
+    gap: 50px;  
     }
-    #browse-title{
+    #browse-title {
         grid-area: br;
         font-size: 20pt;
     }
 
 
-    #vegan-cat{
+    #vegan-cat {
         grid-area: vegan;
     }
 
 
-    #vegetarian-cat{
+    #vegetarian-cat {
         grid-area: vegetarian;
     }
 
 
-    #sugar-free-cat{
-        grid-area:sugarfree;
+    #sugar-free-cat {
+        grid-area: sugarfree;
     }
 
 
-    #non-alcoholic-cat{
-        grid-area:nonalcoholic;
+    #non-alcoholic-cat {
+        grid-area: nonalcoholic;
     }
 
 
-    #dairy-free-cat{
-        grid-area:dairyfree;
+    #dairy-free-cat {
+        grid-area: dairyfree;
     }
  /* browse by category styles end  */
  /* -----------------  */
  /* browse recipes section styles start */
-#browse-recipe-container{
+#browse-recipe-container {
     grid-area: mainbrrecipe;
     background-color: var(--red-salsa);
     gap: 10px;
@@ -400,21 +400,21 @@ main{
 }
 
 
-#browse-recipe-title{
+#browse-recipe-title {
     font-size: 20pt;
     flex-direction: column;
     grid-area: brtitle;        
 }
 
 
-#browse-recipe-search{    
+#browse-recipe-search {    
     grid-area: brsearch;
     width: 100%;  
 }
  /* browse recipes section styles end  */
  /* ------------------ */
  /* subscribe form styles start  */
- #subscribe-form-container{
+ #subscribe-form-container {
     grid-area: mainsub;
     background-color: var(--rajah-70);
     grid-template-rows: 300px 100px 100px 300px;
@@ -426,13 +426,13 @@ main{
  }
 
 
- #subscribe-title{
+ #subscribe-title {
     font-size: 20pt;
     grid-area: subtitle;
  }
 
 
- #subscribe-form{
+ #subscribe-form {
     flex-direction: row;
     grid-area: subform;
  }
@@ -441,7 +441,7 @@ main{
 /*  main styles end  */
 /* -------------------------- */
  /* footer styles start  */
- footer{
+ footer {
     background-color: var(--raisin-black);
     grid-template-columns: auto;
     grid-template-rows: 200px;
@@ -452,20 +452,20 @@ main{
 }
 
 
-footer img{
+footer img {
     width: fit-content;
     height: 100px;
 }
 
 
-#all-rights{
+#all-rights {
     grid-area: allrights;
     color: var(--off-white);
     font-size: 20pt;
 }
 
 
-#share-options{
+#share-options {
    grid-area: shareop;
    width: 100%;
    gap: 50px;
@@ -480,28 +480,25 @@ footer img{
  @media(min-width: 500px) and (max-width: 991px){       
     /* ------------ */
     /* welcome message styles start  */
-        #welcome-message-container{
+        #welcome-message-container {
             height: 300px;
             background-color: var(--red-salsa);    
         }
 
 
-        #welcome-message{   
+        #welcome-message {   
             font-size: 20pt;            
         }
 
 
-        #welcome-title{
+        #welcome-title {
             color: var(--off-white);
         }
             /* welcome message styles end  */
-    /* ----------- */
-    /* main styles start  */
-    main{
-        
-        }
+        /* ----------- */
+        /* main styles start  */    
         /* featured styles start  */
-        #ft-description{
+        #ft-description {
             grid-area: ftdescription;
             text-align: justify;
             margin: 0 100px;
@@ -509,19 +506,19 @@ footer img{
          }
 
 
-         #ft-price-breakdown{
+         #ft-price-breakdown {
             font-size: 2em;
          }
         /* featured styles end  */
         /* ------------------ */
         /* about section styles start  */
-        #about-title{
+        #about-title {
             font-size: 3.5em;            
         }
         /* about section styles end  */
         /* -------------------- */
         /* category section start  */
-        #categories{
+        #categories {
             grid-area: maincategory;
             grid-template-columns: auto;
             grid-template-rows: 250px auto auto 300px;
@@ -537,7 +534,7 @@ footer img{
         /* main styles end  */
     /* -------------------------------  */
     /* footer styles start  */
-            #footer{
+            #footer {
                 grid-template-rows: 125px;
             }
     /* footer styles end  */
@@ -548,15 +545,15 @@ footer img{
  /* ----------------------------------------------------------- */
   /* MEDIA STYLES: DESKTOP start  */
 @media(min-width: 992px){
-    .category-icon{        
+    .category-icon {        
         font-size: 20pt;
         width: 20px;
         height: 20px;
-        padding:30px;        
+        padding: 30px;        
      }
     /* ------------------ */
     /* body styles start  */
-    body{   
+    body {   
         gap: 30px;        
         grid-template-rows: auto;
         grid-template-areas:
@@ -567,13 +564,13 @@ footer img{
     /* body styles end  */
         /* ------------ */
     /* header styles start      */
-        header{    
+        header {    
         grid-template-rows: 125px 500px;    
     } 
     /* header styles end  */
     /* ----------------- */
     /* nav bar styles start  */
-    nav{    
+    nav {    
         grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
         grid-template-rows: 125px;
         background-color: var(--deep-champagne-70);           
@@ -581,7 +578,7 @@ footer img{
 
 
     #nav2,
-    #nav3{
+    #nav3 {
         text-decoration: none;
         color: var(--raisin-black);
         background-color: var(--red-salsa);    
@@ -590,13 +587,13 @@ footer img{
     /*  nav bar styles end  */
     /* ------------ */
     /* welcome message styles start  */
-    #welcome-message-container{
+    #welcome-message-container {
         height: 150px;
         background-color: var(--red-salsa);    
     }
 
 
-    #welcome-message{
+    #welcome-message {
         color: var(--off-white);
         font-size: 20pt;
         align-items: center;
@@ -606,9 +603,9 @@ footer img{
     /* welcome message styles end  */
     /* -----------------  */
     /* main DESKTOP styles start  */
-    #main{   
+    #main {   
         margin: 0;
-        gap:30px;
+        gap: 30px;
         grid-template-columns: 200px 1000px 400px 200px;
         grid-template-rows: 500px auto auto auto;
         grid-template-areas: 
@@ -618,30 +615,30 @@ footer img{
         "m1 mainsub mainsub m2";    
     }
     /*-------------- featured section styles start  */
-    #featured{
-        height:auto;
+    #featured {
+        height: auto;
         background-size: cover;
         grid-area: mainfeatured;
         grid-template-rows: 1300px 200px 300px;           
     }
 
 
-    #ft-description{
+    #ft-description {
         font-size: 1.5em;
     }
 
 
-    #ft-price-breakdown{
+    #ft-price-breakdown {
         font-size: 1.5em;
     }      
     /* -------------featured section styles end  */
     /* --------------------- */
     /* about section styles start  */
-    #about-section{        
+    #about-section {        
         background-color: var(--deep-champagne-70);
         background-size: cover;
-        background-attachment:local;   
-        background-position:center;    
+        background-attachment: local;   
+        background-position: center;    
         background-blend-mode: screen;
         background-repeat: no-repeat;
         grid-area: mainabout;   
@@ -654,7 +651,7 @@ footer img{
     }
 
 
-    #about-title{
+    #about-title {
         grid-area: abttitle;
         font-size: 25pt;
         text-align: center;
@@ -663,19 +660,19 @@ footer img{
     }
 
 
-    #about-description{
+    #about-description {
         grid-area: abtdescription;
         font-size: 25pt;        
         margin: 0 50px;
     }   
 
 
-    #about-section h2{
+    #about-section h2 {
         font-size: 15pt;
     }
 
 
-    #about-section a{
+    #about-section a {
         background-color: var(--raisin-black);
         padding: 0px 50px;
         color: var(--deep-champagne);        
@@ -683,7 +680,7 @@ footer img{
     /* about section styles end  */
     /* ----------------------- */    
     /* other blogs styles start  */
-    #other-posts{
+    #other-posts {
         grid-area: mainother;    
         grid-template-rows: 75px 250px 250px;    
     }
@@ -696,14 +693,14 @@ footer img{
     }    
     
     
-    #other-posts h1{                     
+    #other-posts h1 {                     
         padding: 20px 30px;        
     }
 
 
-    #other-posts h2{
+    #other-posts h2 {
         font-size: 1em;
-        color:var(--off-white);
+        color: var(--off-white);
     }
 
 
@@ -714,14 +711,14 @@ footer img{
 
 
     #blog-post1 h1,
-    #blog-post2 h1{
+    #blog-post2 h1 {
         font-size: 1.3em;
         background-color: var(--raisin-black-70);
     }
 
 
     #blog-post1,
-    #blog-post2{
+    #blog-post2 {
         background-color: var(--deep-champagne-30);
         background-blend-mode: soft-light;
     }    
@@ -730,17 +727,17 @@ footer img{
     
     /* --------------- */
     /* browse by category styles start  */
-    #categories{
+    #categories {
         grid-area: mainbrcat;
         grid-template-columns: 100px repeat(6, 130px) 100px;    
         grid-template-rows: 70px auto auto 100px;   
-        gap:25px;
+        gap: 25px;
         width: 100%;  
     }  
     /* browse by category styles end  */
     /* -----------------  */
     /* browse recipes section styles start */
-    #browse-recipe-container{
+    #browse-recipe-container {
         grid-area: mainbrrecipe;
         gap: 10px;
         grid-template-columns: auto;
@@ -748,24 +745,24 @@ footer img{
     } 
 
 
-    #browse-recipe-title{
+    #browse-recipe-title {
         font-size: 1.3em;
     } 
     /* browse recipes section styles end  */
     /* ------------------ */
     /* subscribe form styles start  */
-    #subscribe-form-container{
+    #subscribe-form-container {
         grid-area: mainsub;
     }
 
 
-    #subscribe-title{
+    #subscribe-title {
         font-size: 20pt;
         grid-area: subtitle;
     }
 
     
-    #subscribe-form{
+    #subscribe-form {
         flex-direction: row;
         grid-area: subform;
     }
@@ -774,7 +771,7 @@ footer img{
     /*  main styles end  */
     /* -------------------------- */
     /* footer styles start  */
-    footer{
+    footer {
         background-color: var(--raisin-black);
         grid-template-columns: 500px auto auto;
         grid-template-rows: 100px;
@@ -785,20 +782,20 @@ footer img{
     }
 
 
-    footer img{
+    footer img {
         width: 50px;
         height: auto;
     }
 
 
-    #all-rights{
+    #all-rights {
         grid-area: allrights;
         color: var(--off-white);
         font-size: 12pt;
     }
 
-    
-    #share-options{
+
+    #share-options {
         grid-area: shareop;
         width: 100%;
         gap: 15px;
