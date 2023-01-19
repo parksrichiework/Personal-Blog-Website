@@ -574,7 +574,7 @@ footer img {
     #categories {
         grid-area: mainbrcat;    
         grid-template-rows: 70px auto auto 100px;   
-        gap:25px;  
+        gap: 25px;  
     }  
     /* browse by category styles end  */
     /* -----------------  */
