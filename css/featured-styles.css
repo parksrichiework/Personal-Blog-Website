@@ -29,11 +29,15 @@
 .container{
     display: grid;
 }
+
+
 .box{
     display:flex;
     align-items: center;
     justify-content: center;
 }
+
+
 .category-icon{
    display:flex;
    color: var(--deep-champagne);
@@ -47,9 +51,13 @@
    border-radius: 50%;
    text-decoration: none;
 }
+
+
 a{
     text-decoration: none;
 }
+
+
 /* universal classes styles end  */
 /* ----------------- */
 /* body styles start  */
@@ -94,10 +102,14 @@ nav{
     grid-template-areas:
     "navspace1 logo navspace2 category about search";        
 }
+
+
 nav img{
     max-height: 80px;
     border-radius: 50%;
 }
+
+
 #nav2,
 #nav3{
     text-decoration: none;
@@ -108,15 +120,23 @@ nav img{
     border: solid 3px var(--raisin-black);
     padding: 10px 20px;        
 }
+
+
 #nav1{
     grid-area: logo;
  }
+
+
  #nav2{
     grid-area: category;
  }
+
+
  #nav3{
     grid-area: about;
  }
+
+
  #nav4{
     grid-area: search;       
  } 
@@ -132,21 +152,29 @@ nav img{
     "wellocation"
     "welcategory";
  }
+
+
 #welcome-title{
     grid-area: weltitle;
     color: var(--raisin-black);
     font-size: 60pt;
     margin-bottom: 0;    
 }
+
+
 #location-icon{
     height: 60px;
     border-radius: 50%;
 }
+
+
 #location-container{
     gap:30px;
     grid-area: wellocation;
     font-size: 17pt;
 }
+
+
 #welcome-category{
     gap: 30px;
     grid-area: welcategory;
@@ -186,16 +214,22 @@ main{
     ;
     background-color:  var(--rajah-70);         
 }
+
+
 #ft-photo{
     grid-area: ftphoto;
     width: 100%;
     height: auto;      
 }
+
+
 #ft-description{
     grid-area: ftdescription;
     text-align: justify;
     margin: 0 100px;    
  }
+
+
 #ft-price-breakdown{
     color: var(--off-white);
     grid-area: ftpricebreakdown;
@@ -221,23 +255,33 @@ main{
     "abtmore"
     "abtspace2";
 }
+
+
 #about-title{
     grid-area: abttitle;
     font-size: 60pt;
     color: var(--skobeloff);
 }
+
+
 #about-description{
     grid-area: abtdescription;
     font-size: 35pt;
     text-align: center;
     margin: 0 150px;
 }
+
+
 #about-more{
     grid-area: abtmore;    
 }
+
+
 #about-section h2{
     font-size: 25pt;
 }
+
+
 #about-section a{
     background-color: var(--raisin-black);
     padding: 0px 50px;
@@ -250,12 +294,16 @@ main{
     grid-area: mainother;
     grid-template-rows: 200px 600px 600px;    
 }
+
+
 #other-posts-title{
     margin: 0;
     font-size: 50pt;
     color: var(--raisin-black);
     background-color: var(--rajah);
 }
+
+
 #blog-post1 h1,
 #blog-post2 h1{
     font-size: 40pt;
@@ -263,14 +311,20 @@ main{
     background-color: var(--raisin-black-70);
     padding: 20px 30px;
 }
+
+
 #other-posts h2{
     font-size: 25pt;
     color:var(--off-white);
 }
+
+
 #other-posts a{
     background-color: var(--skobeloff);
     padding: 0px 50px;
 }
+
+
 #blog-post1{
     background-image: url(../img/blog1-img.jpg);       
     background-size: cover;
@@ -278,6 +332,8 @@ main{
     background-repeat: no-repeat;
     flex-direction: column;
 }
+
+
 #blog-post2{
     background-image: url(../img/blog2-img.jpg);    
     background-size: cover;
@@ -303,18 +359,28 @@ main{
         grid-area: br;
         font-size: 20pt;
     }
+
+
     #vegan-cat{
         grid-area: vegan;
     }
+
+
     #vegetarian-cat{
         grid-area: vegetarian;
     }
+
+
     #sugar-free-cat{
         grid-area:sugarfree;
     }
+
+
     #non-alcoholic-cat{
         grid-area:nonalcoholic;
     }
+
+
     #dairy-free-cat{
         grid-area:dairyfree;
     }
@@ -332,11 +398,15 @@ main{
     "brsearch"
     "brspace2";          
 }
+
+
 #browse-recipe-title{
     font-size: 20pt;
     flex-direction: column;
     grid-area: brtitle;        
 }
+
+
 #browse-recipe-search{    
     grid-area: brsearch;
     width: 100%;  
@@ -354,10 +424,14 @@ main{
     "subform"    
     "subspace2";
  }
+
+
  #subscribe-title{
     font-size: 20pt;
     grid-area: subtitle;
  }
+
+
  #subscribe-form{
     flex-direction: row;
     grid-area: subform;
@@ -376,15 +450,21 @@ main{
     "allrights shareop"    
     ;
 }
+
+
 footer img{
     width: fit-content;
     height: 100px;
 }
+
+
 #all-rights{
     grid-area: allrights;
     color: var(--off-white);
     font-size: 20pt;
 }
+
+
 #share-options{
    grid-area: shareop;
    width: 100%;
@@ -404,13 +484,17 @@ footer img{
             height: 300px;
             background-color: var(--red-salsa);    
         }
+
+
         #welcome-message{   
             font-size: 20pt;            
         }
+
+
         #welcome-title{
             color: var(--off-white);
         }
-    /* welcome message styles end  */
+            /* welcome message styles end  */
     /* ----------- */
     /* main styles start  */
     main{
@@ -423,6 +507,8 @@ footer img{
             margin: 0 100px;
             font-size: 20pt;    
          }
+
+
          #ft-price-breakdown{
             font-size: 2em;
          }
@@ -492,6 +578,8 @@ footer img{
         grid-template-rows: 125px;
         background-color: var(--deep-champagne-70);           
     }
+
+
     #nav2,
     #nav3{
         text-decoration: none;
@@ -506,6 +594,8 @@ footer img{
         height: 150px;
         background-color: var(--red-salsa);    
     }
+
+
     #welcome-message{
         color: var(--off-white);
         font-size: 20pt;
@@ -534,9 +624,13 @@ footer img{
         grid-area: mainfeatured;
         grid-template-rows: 1300px 200px 300px;           
     }
+
+
     #ft-description{
         font-size: 1.5em;
     }
+
+
     #ft-price-breakdown{
         font-size: 1.5em;
     }      
@@ -558,6 +652,8 @@ footer img{
         "abtmore"
         ;
     }
+
+
     #about-title{
         grid-area: abttitle;
         font-size: 25pt;
@@ -565,14 +661,20 @@ footer img{
         color: var(--skobeloff);
         margin: 0 25px;
     }
+
+
     #about-description{
         grid-area: abtdescription;
         font-size: 25pt;        
         margin: 0 50px;
     }   
+
+
     #about-section h2{
         font-size: 15pt;
     }
+
+
     #about-section a{
         background-color: var(--raisin-black);
         padding: 0px 50px;
@@ -585,27 +687,39 @@ footer img{
         grid-area: mainother;    
         grid-template-rows: 75px 250px 250px;    
     }
+
+
     #other-posts-title{
         font-size: 2em;
         background-color: var(--raisin-black);
         color: var(--deep-champagne);
-    }      
+    }    
+    
+    
     #other-posts h1{                     
         padding: 20px 30px;        
     }
+
+
     #other-posts h2{
         font-size: 1em;
         color:var(--off-white);
     }
+
+
     #other-posts a{
         background-color: var(--skobeloff);
         padding: 0px 20px;
     }
+
+
     #blog-post1 h1,
     #blog-post2 h1{
         font-size: 1.3em;
         background-color: var(--raisin-black-70);
     }
+
+
     #blog-post1,
     #blog-post2{
         background-color: var(--deep-champagne-30);
@@ -632,6 +746,8 @@ footer img{
         grid-template-columns: auto;
         grid-template-rows: 140px 50px 100px 0;          
     } 
+
+
     #browse-recipe-title{
         font-size: 1.3em;
     } 
@@ -641,10 +757,14 @@ footer img{
     #subscribe-form-container{
         grid-area: mainsub;
     }
+
+
     #subscribe-title{
         font-size: 20pt;
         grid-area: subtitle;
     }
+
+    
     #subscribe-form{
         flex-direction: row;
         grid-area: subform;
@@ -663,15 +783,21 @@ footer img{
         "footerspace allrights shareop"    
         ;
     }
+
+
     footer img{
         width: 50px;
         height: auto;
     }
+
+
     #all-rights{
         grid-area: allrights;
         color: var(--off-white);
         font-size: 12pt;
     }
+
+    
     #share-options{
         grid-area: shareop;
         width: 100%;
