@@ -109,10 +109,10 @@ nav img {
 #nav3 {
     text-decoration: none;
     font-size: 20pt;
-    color: var(--raisin-black);
+    color: var(--off-white);
     background-color: var(--red-salsa);
     border-radius: 50px;
-    border: solid 3px var(--raisin-black);
+    border: solid 3px var(--off-white);
     padding: 10px 20px;        
 }
 
@@ -145,8 +145,8 @@ nav img {
 
 
 #welcome-message {
-    color: var(--raisin-black);
-    font-size: 35pt;
+    color: var(--off-white);
+    font-size: 30pt;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -218,7 +218,7 @@ main {
 
 
 #featured4 {
-    grid-area: ftreadmore;      
+    grid-area: ftreadmore;          
 }
 
 
@@ -425,9 +425,7 @@ footer img {
     }
 
 
-    #welcome-message {   
-        font-size: 20pt;    
-    }
+   
     /* welcome message styles end  */
     /* ----------- */
     } 
