@@ -205,13 +205,13 @@ main {
     height: auto;         
     grid-gap: 50px;
     grid-template-columns: auto;
-    grid-template-rows: auto 425px 250px 100px;
+    grid-template-rows: auto 100px 425px 250px 100px;
     grid-template-areas:
     "ftphoto"
+    "ftphotocaption"
     "ftdescription"
     "ftpricebreakdown"
-    "ftspace"
-    ;
+    "ftspace";
     background-color:  var(--rajah-70);         
 }
 
@@ -220,6 +220,14 @@ main {
     grid-area: ftphoto;
     width: 100%;
     height: auto;      
+}
+
+
+#ft-photo-caption{
+    grid-area: ftphotocaption;
+    color: var(--off-white);
+    margin: 0 2em;
+    font-size: 1.5em;
 }
 
 
@@ -632,7 +640,7 @@ footer img {
         height: auto;
         background-size: cover;
         grid-area: mainfeatured;
-        grid-template-rows: 1300px 200px 300px;           
+        grid-template-rows: 1160px 0 300px;           
     }
 
 
