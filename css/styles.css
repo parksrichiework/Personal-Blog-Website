@@ -176,7 +176,9 @@ main {
     height: 1300px;
     background-image: url(../img/featured-food-img.jpg);    
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    background-color: var(--raisin-black-70);
+    background-blend-mode: soft-light;     
     align-items: center;
     justify-content: center;    
     grid-gap: 20px;
@@ -246,15 +248,11 @@ main {
 }
 
 
-#other-posts h2 {
-    font-size: 25pt;
-    color: var(--off-white);
-}
-
-
 #other-posts a {
     background-color: var(--skobeloff);
-    padding: 0px 20px;
+    padding: 20px 30px;
+    color: var(--off-white);
+    font-size: 25pt;
 }
 
 
@@ -425,7 +423,11 @@ footer img {
     }
 
 
-   
+    #featured {
+        grid-template-rows: 400px 100px 100px 100px 150px;
+    }
+
+
     /* welcome message styles end  */
     /* ----------- */
     } 
@@ -445,32 +447,38 @@ footer img {
     body {   
         grid-template-rows: 275px auto auto;
         grid-template-areas:
-    "header"
-    "main"
-    "footer"; 
+        "header"
+        "main"
+        "footer"; 
         }
     /* body styles end  */
         /* ------------ */
     /* header styles start      */
         header {    
-        grid-template-rows: 125px 100px;    
+        grid-template-rows: 80px 100px;    
     } 
     /* header styles end  */
     /* ----------------- */
     /* nav bar styles start  */
     nav {    
         grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
-        grid-template-rows: 125px;
+        grid-template-rows: 80px;
         background-color: var(--deep-champagne-70);           
+    }
+
+    nav img {
+        max-height: 60px;
+        border-radius: 50%;
     }
 
 
     #nav2,
     #nav3 {
         text-decoration: none;
-        color: var(--raisin-black);
-        background-color: var(--red-salsa);    
-        border: none;           
+        color: var(--red-salsa);
+        background-color: var(--off-white);    
+        border: none;
+        font-size: 1.3em;           
     }
     /*  nav bar styles end  */
     /* ------------ */
@@ -493,7 +501,8 @@ footer img {
     /* main styles start  */
     #main {   
         grid-template-columns: 100px auto auto 100px;
-        grid-template-rows: 800px 500px auto;
+        grid-template-rows: 600px 500px auto;
+        gap: 25px;
         grid-template-areas: 
         "mainblank1 mainfeatured mainother mainblank2"
         "mainblank1 mainbrcat mainbrrecipe mainblank2"
@@ -504,13 +513,13 @@ footer img {
         height: auto;
         background-size: cover;
         grid-area: mainfeatured;
-        grid-template-rows: 350px 90px 50px 50px 80px;           
+        grid-template-rows: 150px 90px 50px 50px 80px;                  
     }
 
 
     #featured1 {        
         font-size: 30pt;        
-        padding: 20px;        
+        padding: 20px 50px;        
     }
 
 
@@ -542,33 +551,46 @@ footer img {
         font-size: 10pt;
         padding: 0px 20px; 
     }
+
+    #featured4 a:hover {
+        background-color: var(--off-white);
+        color: var(--skobeloff);
+        transition: 0.3s ease-in-out;
+        border-radius: 2em;    
+    }
+
+
     /* -------------featured section styles end  */
     /* ------------------------ */
     /* other blogs styles start  */
     #other-posts {
         grid-area: mainother;    
-        grid-template-rows: repeat(2, 400px);    
+        grid-template-rows: repeat(2, 300px);    
     }      
 
 
     #other-posts h1 {
         font-size: 20pt;
-        color: var(--deep-champagne);
-        background-color: var(--raisin-black-70);
+        color: var(--raisin-black);
+        background-color: var(--deep-champagne-70);
         padding: 20px 30px;
     }
-
-
-    #other-posts h2 {
-        font-size: 15pt;
-        color: var(--off-white);
-    }
-
+  
 
     #other-posts a {
+        font-size: 15pt;
         background-color: var(--skobeloff);
-        padding: 0px 20px;
+        padding: 20px 30px;        
     }
+
+    #other-posts a:hover {
+        background-color: var(--off-white);
+        color: var(--skobeloff);
+        transition: 0.3s ease-in-out;
+        border-radius: 2em;    
+    }
+
+
     /* other blogs styles end  */
     /* ----------- */
     /* main styles end  */
