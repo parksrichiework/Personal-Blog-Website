@@ -603,8 +603,16 @@ footer img {
         font-size: 20pt;
         align-items: center;
         justify-content: left;
-        flex-direction: column;
+        flex-direction: column;        
     }
+
+
+    #welcome-title{
+        margin: 0;
+        font-size: 3.5em;
+    }
+
+
     /* welcome message styles end  */
     /* -----------------  */
     /* main DESKTOP styles start  */
