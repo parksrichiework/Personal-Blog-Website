@@ -585,6 +585,14 @@ footer img {
         height: 20px;
         padding: 30px;        
      }
+
+
+    .category-icon:hover {
+        cursor: pointer;
+        color: var(--raisin-black);
+        background-color: var(--deep-champagne);
+        transition: 0.3s ease-in-out;
+    }
     /* ------------------ */
     /* body styles start  */
     body {   
@@ -624,6 +632,16 @@ footer img {
         border: none;
         font-size: 1.3em;           
     }
+
+
+    #nav2:hover ,
+    #nav3:hover {
+        color: var(--off-white);
+        background-color: var(--red-salsa);        
+        transition: 0.3s ease-in-out; 
+    }
+
+
     /*  nav bar styles end  */
     /* ------------ */
     /* welcome message styles start  */
@@ -774,14 +792,15 @@ footer img {
         font-size: 15pt;
         background-color: var(--skobeloff);
         padding: 15px 30px;
-        color: var(--off-white);        
+        color: var(--off-white);                
     }
 
     #other-posts a:hover {
         background-color: var(--off-white);
         color: var(--skobeloff);
         transition: 0.3s ease-in-out;
-        border-radius: 2em;    
+        border-radius: 2em;
+        cursor: pointer;    
     }
 
 
@@ -823,6 +842,7 @@ footer img {
         border: solid 0;
         border-radius: 3em;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
 
 
@@ -851,6 +871,7 @@ footer img {
         color: var(--raisin-black);
         border-radius: 3em;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
 
 
@@ -859,6 +880,7 @@ footer img {
         color: var(--deep-champagne);
         border-radius: 3em;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
     /* subscribe form styles end  */
     /* ------------------ */

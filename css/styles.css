@@ -469,8 +469,15 @@ footer img {
         font-size: 20pt;
         width: 20px;
         height: 20px;
-        padding: 30px;        
+        padding: 30px;             
      }
+
+    .category-icon:hover {
+        cursor: pointer;
+        color: var(--raisin-black);
+        background-color: var(--deep-champagne);
+        transition: 0.3s ease-in-out;
+    }
     /* ------------------ */
     /* body styles start  */
     body {   
@@ -508,6 +515,14 @@ footer img {
         background-color: var(--off-white);    
         border: none;
         font-size: 1.3em;           
+    }
+
+
+    #nav2:hover ,
+    #nav3:hover {
+        color: var(--off-white);
+        background-color: var(--red-salsa);        
+        transition: 0.3s ease-in-out; 
     }
     /*  nav bar styles end  */
     /* ------------ */
@@ -677,6 +692,7 @@ footer img {
         color: var(--raisin-black);
         border-radius: 3em;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
 
 
@@ -685,6 +701,7 @@ footer img {
         color: var(--deep-champagne);
         border-radius: 3em;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
     /* subscribe form styles end  */
     /* ------------------ */
