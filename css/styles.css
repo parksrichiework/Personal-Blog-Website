@@ -346,15 +346,25 @@ main {
 
 #browse-recipe-search {    
     grid-area: brsearch;
-    width: 100%;  
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;     
 }
+
+#br-submit{
+    background-color: var(--raisin-black);
+    color: var(--deep-champagne);
+    padding: 10px 30px;
+    border: solid 0;    
+}
+
  /* browse recipes section styles end  */
  /* ------------------ */
  /* subscribe form styles start  */
  #subscribe-form-container {
     grid-area: mainsub1;
     background-color: var(--rajah);
-    grid-template-rows: 300px 100px 100px 300px;
+    grid-template-rows: 300px 200px 100px 300px;
     grid-template-areas: 
     "subspace1"
     "subtitle"
@@ -370,9 +380,28 @@ main {
 
 
  #subscribe-form {
-    flex-direction: row;
+    flex-direction: column;
     grid-area: subform;
+    gap: 20px;
  }
+
+
+ #submit-button {
+    background-color: var(--raisin-black);
+    color: var(--deep-champagne);
+    padding: 10px 30px;
+    border: solid 0;    
+}
+
+
+#submit-reset-button {
+    background-color: var(--deep-champagne);
+    color: var(--raisin-black);
+    padding: 10px 30px;
+    border: solid 0;    
+}
+
+
 /* subscribe form styles end  */
  /* ------------------ */
 /*  main styles end  */
@@ -611,6 +640,17 @@ footer img {
         gap: 10px;
         grid-template-rows: 140px 50px 100px 300px;          
     }  
+
+
+    #br-submit:hover {
+        background-color: var(--deep-champagne);
+        color: var(--raisin-black);
+        padding: 10px 30px;
+        border: solid 0;
+        border-radius: 3em;
+        transition: 0.3s ease-in-out;
+        cursor: pointer;
+    }
     /* browse recipes section styles end  */
     /* ------------------ */
     /* subscribe form styles start  */
@@ -626,8 +666,25 @@ footer img {
 
 
     #subscribe-form {
+        gap: 30px;
         flex-direction: row;
         grid-area: subform;
+    }
+
+    
+    #submit-button:hover {
+        background-color: var(--deep-champagne);
+        color: var(--raisin-black);
+        border-radius: 3em;
+        transition: 0.3s ease-in-out;
+    }
+
+
+    #submit-reset-button:hover  {
+        background-color: var(--raisin-black);
+        color: var(--deep-champagne);
+        border-radius: 3em;
+        transition: 0.3s ease-in-out;
     }
     /* subscribe form styles end  */
     /* ------------------ */
