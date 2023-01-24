@@ -1,0 +1,17 @@
+/* @media(max-width: 991px) { */
+    /* ------------ */
+    /* welcome message styles start  */
+    #welcome-message-container {
+        height: 300px;
+        background-color: var(--red-salsa);    
+    }
+
+
+    #featured {
+        grid-template-rows: 400px 100px 100px 100px 150px;
+    }
+
+
+    /* welcome message styles end  */
+    /* ----------- */
+    /* }  */
