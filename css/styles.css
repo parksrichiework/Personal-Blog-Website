@@ -1,5 +1,7 @@
-@import url("desktopstyles.css") screen and (min-width: 992px);
-@import url("tabletstyles.css") screen and (max-width: 991px);
+@import "desktopstyles.css" screen and (min-width: 992px);
+
+
+@import "tabletstyles.css" screen and (max-width: 991px);
 
 
 :root {
@@ -161,7 +163,7 @@ nav img {
 /* ------------------  */
 /* main styles start  */
 main {
-    width: 100%;
+    
     margin: 0;
     grid-template-columns: 100%;
     grid-template-rows: auto;
@@ -292,7 +294,7 @@ main {
     "br br br br br br br" 
     "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
     "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
-    gap:50px;  
+    gap: 25px;  
     }
 
 

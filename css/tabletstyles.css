@@ -3,7 +3,7 @@
     /* welcome message styles start  */
     #welcome-message-container {
         height: 300px;
-        background-color: var(--red-salsa);    
+        background-color: var(--rajah);    
     }
 
 
@@ -12,6 +12,9 @@
     }
 
 
+    #welcome-message{
+        font-size: 1.5em;
+    }
     /* welcome message styles end  */
     /* ----------- */
     /* }  */
