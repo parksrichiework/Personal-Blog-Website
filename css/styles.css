@@ -1,8 +1,5 @@
-@import "desktopstyles.css" (min-width: 992px);
-
-
-@import "tabletstyles.css" (min-width: 500px) and (max-width: 991px);
-
+@import "./desktopstyles.css" (min-width:992px);
+@import "./tabletstyles.css" screen and (min-width: 500px) and (max-width: 991px);
 
 :root {
     /* first pallete */
