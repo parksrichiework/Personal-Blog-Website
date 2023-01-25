@@ -1,4 +1,4 @@
-@import "desktopstyles.css" screen and (min-width: 992px);
+@import "desktopstyles.css" (min-width: 992px);
 
 
 @import "tabletstyles.css" (min-width: 500px) and (max-width: 991px);
@@ -452,6 +452,7 @@ footer img {
     /* MEDIA STYLES: Tablet end  */
  /* ----------------------------------------------------------- */
  /* ----------------------------------------------------------- */
+/* MEDIA STYLES:  DESKTOP start  */
 
  /* MEDIA STYLES: Dekstop end  */
  /* ----------------- */
