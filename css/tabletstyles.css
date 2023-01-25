@@ -2,8 +2,7 @@
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container {
-        height: 300px;
-        background-color: var(--rajah);    
+        height: 300px;           
     }
 
 
