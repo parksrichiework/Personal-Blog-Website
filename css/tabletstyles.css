@@ -1,4 +1,4 @@
-/* @media(max-width: 991px) { */
+@media(max-width: 991px) {
     /* ------------ */
     /* welcome message styles start  */
     #welcome-message-container {
@@ -16,4 +16,4 @@
     }
     /* welcome message styles end  */
     /* ----------- */
-    /* }  */
+    } 

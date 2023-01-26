@@ -1,0 +1,49 @@
+/* nav bar styles start  */
+nav {
+    display: inherit;
+    align-items: center;
+    grid-gap: 10px;
+    grid-template-columns: 20px 80px 250px auto auto 90px 10px;
+    grid-template-rows: 128px;
+    grid-template-areas:
+    "navspace1 logo navspace2 category about search";        
+}
+
+
+nav img {
+    max-height: 80px;
+    border-radius: 50%;
+}
+
+
+#nav2,
+#nav3 {
+    text-decoration: none;
+    font-size: 20pt;
+    color: var(--off-white);
+    background-color: var(--red-salsa);
+    border-radius: 50px;
+    border: solid 3px var(--off-white);
+    padding: 10px 20px;        
+}
+
+
+#nav1 {
+    grid-area: logo;
+ }
+
+
+ #nav2 {
+    grid-area: category;
+ }
+
+
+ #nav3 {
+    grid-area: about;
+ }
+
+
+ #nav4 {
+    grid-area: search;       
+ } 
+/*  nav bar styles end  */

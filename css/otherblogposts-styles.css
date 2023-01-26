@@ -1,0 +1,44 @@
+/* other blogs styles start  */
+#other-posts {
+    grid-area: mainother1;
+    grid-template-rows: repeat(2, 600px);    
+}
+
+
+#other-posts h1 {
+    font-size: 40pt;
+    color: var(--deep-champagne);
+    background-color: var(--raisin-black-70);
+    padding: 20px 30px;
+}
+
+
+#other-posts a {
+    background-color: var(--skobeloff);
+    padding: 20px 30px;
+    color: var(--off-white);
+    font-size: 25pt;
+}
+
+
+#blog-post1 {
+    background-image: url(../img/blog1-img.jpg);       
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
+}
+
+
+#blog-post2 {
+    background-image: url(../img/blog2-img.jpg);    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    background-color: var(--deep-champagne-30);
+    background-blend-mode: soft-light;
+}
+/* other blogs styles end  */

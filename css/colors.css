@@ -1,0 +1,22 @@
+:root {
+    /* first pallete */
+    --tumbleweed: #D8A47F;
+    --raisin-black: #272932;
+    --raisin-black-70: #272932af;
+    --alice-blue: #e7ecef;
+    --skobeloff: #0f7173;
+    --skobeloff-70: #0f7173bd;
+    --red-salsa: #f05d5e;
+    /* second pallete */
+    --ruby-red: #A41623;
+    --orange-pantone: #f85e00;
+    --rajah: #ffb563;
+    --rajah-70: #ffb663b0;
+    --deep-champagne: #ffd29d;
+    --deep-champagne-70: #ffd19dc3;
+    --deep-champagne-30: #ffd19d4f;
+    --gold-fusion: #918450;
+    --gold-fusion-70: #918450c3;
+    /* universal palette */
+    --off-white:#f4f4f4;
+   }
