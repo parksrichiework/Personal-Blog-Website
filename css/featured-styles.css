@@ -50,8 +50,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-size: cover; 
-    color: var(--raisin-black);
-    grid-template-columns: 100%;
+    color: var(--raisin-black);    
     grid-template-rows: auto auto auto; 
     grid-template-areas:
     "header"
@@ -136,7 +135,7 @@ nav img {
 #welcome-title {
     grid-area: weltitle;
     color: var(--off-white);
-    font-size: 60pt;
+    font-size: 2em;
     margin-bottom: 0;    
 }
 
