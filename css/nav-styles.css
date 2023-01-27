@@ -2,7 +2,7 @@
 nav {    
     align-items: center;
     grid-gap: 10px;
-    grid-template-columns: 0 60px 80px auto auto 1fr;
+    grid-template-columns: 0 60px 2fr auto auto 1fr;
     grid-template-rows: 70px;
     grid-template-areas:
     "nav1 logo nav2 category about search";        
