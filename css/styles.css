@@ -341,7 +341,7 @@ footer img {
  /* --------------------------------------------------------------- */
  /* ------------------------------------------------------------------ */
  /* MEDIA STYLES: Tablet start  */
- @media(min-width: 500px) and (max-width: 991px) {
+ @media(min-width: 600px) and (max-width: 991px) {
     /* -------------------- */
     /* nav styles start  */
     nav {
@@ -429,6 +429,7 @@ footer img {
     /* ------------------ */
     /* body styles start  */
     body {   
+        width: 100vw;
         grid-template-rows: 275px auto auto;
         grid-template-areas:
         "header"
@@ -445,7 +446,7 @@ footer img {
     /* ----------------- */
     /* nav bar styles start  */
     nav {    
-        grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
+        grid-template-columns: 0 80px 1fr auto auto 80px 10px;
         grid-template-rows: 80px;
         background-color: var(--deep-champagne-70);           
     }
