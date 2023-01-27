@@ -422,7 +422,7 @@ main {
 /*  main styles end  */
 /* -------------------------- */
  /* footer styles start  */
- footer {
+footer {
     background-color: var(--raisin-black);
     grid-template-columns: auto auto auto;
     grid-template-rows: 100px 50px;
@@ -462,7 +462,7 @@ footer img {
     /* ------------ */
         nav {               
             grid-gap: 10px;
-            grid-template-columns: 0 60px 275px repeat(3, 1fr);
+            grid-template-columns: 0 60px 280px repeat(3, 1fr);
             grid-template-rows: 80px;
             grid-template-areas:
             "nav1 logo nav3 category about search";        
@@ -473,6 +473,7 @@ footer img {
             max-height: 60px;
             border-radius: 50%;
         }
+
 
         #nav2,
         #nav3 {
@@ -520,18 +521,44 @@ footer img {
         #about-title {
             font-size: 3.5em;            
         }
+
+        #about-description {
+            grid-area: abtdescription;
+            font-size: 2em;
+            text-align: center;
+            margin: 0 3em;    
+        }
+
         /* about section styles end  */
         /* -------------------- */
+        /* other blog posts styles start  */
+        #other-posts {
+            grid-template-rows: 300px 500px 500px;
+        }
+
+
+        #other-posts-title {
+            font-size: 3em;
+        }
+
+
+        #other-posts a {
+            font-size: 1.2em;
+        }
+
+
+        /* other blog posts styles end  */
+        /* ------------------------- */
         /* category section start  */
         #categories {
             grid-area: maincategory;
             grid-template-columns: auto;
             grid-template-rows: 250px auto auto 300px;
             grid-template-areas:
-            "ct1 ct2 ct2 ct2 ct2 ct2 ct1"
-            "ct1 br br br br br br" 
-            "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct1"
-            "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct1";
+            "ct1 ct2 ct2 ct2 ct2 ct2 ct3"
+            "ct1 br br br br br ct3" 
+            "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct3"
+            "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct3";
             gap: 50px;  
             }
         /* category section end  */
@@ -539,9 +566,15 @@ footer img {
         /* main styles end  */
     /* -------------------------------  */
     /* footer styles start  */
-            #footer {
-                grid-template-rows: 125px;
-            }
+        footer {
+            background-color: var(--raisin-black);
+            grid-template-columns: auto 1fr 1fr auto;
+            grid-template-rows: 200px;
+            gap: 10px;
+            grid-template-areas:     
+            "footspace1  allrights shareop footspace2"            
+            ;
+        }
     /* footer styles end  */
     /* --------------------------------- */
     } 
