@@ -10,6 +10,9 @@
 @import "otherblogposts-styles.css";
 
 
+/* external link to "category icon" styles  */
+@import "categoryicon-styles.css";
+
    /* --------------------- */
 /* MEDIA STYLES MOBILE start  */
 
@@ -26,19 +29,7 @@
 }
 
 
-.category-icon {
-   display: flex;
-   color: var(--deep-champagne);
-   background-color: var(--raisin-black);
-   font-size: 30pt;
-   width: 50px;
-   height: 50px;
-   padding: 30px;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50%;
-   text-decoration: none;
-}
+/* category icon styles linked externally  */
 
 
 a {
@@ -48,16 +39,17 @@ a {
 /* ----------------- */
 /* body styles start  */
 body {
-    margin:0;
-    font-family:"Franklin Gothic", "Arial Narrow", Arial, sans-serif;
-    width: 100%;
+    margin: 0;
+    font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+    width: 100vw;
     height: auto;    
     background-image: url(../img/landing-page-bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover; 
-    color: var(--raisin-black);    
+    color: var(--raisin-black);
+    grid-template-columns: 100vw;    
     grid-template-rows: 425px auto auto; 
     grid-template-areas:
     "header"
@@ -68,11 +60,12 @@ body {
 /* -------------------------- */
 /* header styles start  */
 header {
-    width: 100%;
+    width: 100vw;
     height: 130px;
     background-color: var(--red-salsa);
     margin: 0;
     grid-area: header;
+    grid-template-columns: 100vw;
     grid-template-rows: auto 300px;    
 }
 /* -------------------------- */
@@ -89,10 +82,7 @@ header {
 
 #welcome-message {
     color: var(--off-white);
-    font-size: 1.5em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    font-size: 1em;    
 }
 /* welcome message styles end  */
 /* -----------------  */
@@ -102,7 +92,7 @@ header {
 main {
     
     margin: 0;
-    grid-template-columns: 100%;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "mainfeature1"
@@ -181,22 +171,25 @@ main {
 
 /* ----------- */
  /* browse by category styles start  */
-    #categories {
+ #categories {
+    width: 100vw;
     grid-area: maincat1;
-    grid-template-columns: repeat(6, 100px);
-    grid-template-rows: 300px auto auto 300px;
+    grid-template-columns: 50px auto auto 50px;
+    grid-template-rows: 250px auto auto auto auto 250px;
     grid-template-areas:
-    "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 "
-    "br br br br br br br" 
-    "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
-    "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
+    "empty1 catspace1 catspace1 empty2 "
+    "empty1 br br empty2"
+    "empty1 sugarfree nonalcoholic empty2" 
+    "empty1 vegan vegetarian empty2"
+    "empty1 dairyfree dairyfree empty2"    
+    "empty1 catspace2 catspace2 empty2";
     gap: 25px;  
     }
 
 
     #browse-title {
         grid-area: br;
-        font-size: 20pt;
+        font-size: 1.5em;
     }
 
 
@@ -368,7 +361,7 @@ footer img {
  /* ----------------------------------------------------------- */
  /* ----------------------------------------------------------- */
 /* MEDIA STYLES:  DESKTOP start  */
-@media(min-width:991px) {
+@media(min-width:992px) {
     .category-icon {        
         font-size: 20pt;
         width: 20px;
@@ -447,7 +440,8 @@ footer img {
     /* welcome message styles end  */
     /* -----------------  */
     /* main styles start  */
-    #main {   
+    #main { 
+        grid-area: main;  
         grid-template-columns: 100px auto auto 100px;
         grid-template-rows: 600px 500px auto;
         gap: 25px;
@@ -546,11 +540,15 @@ footer img {
     /* browse by category styles start  */
     #categories {
         grid-area: mainbrcat;
-        grid-template-columns: 100px repeat(6, auto) 100px;    
-        grid-template-rows: 70px auto auto 100px;   
-        gap: 25px;
-        width: 100%;  
-    }  
+        grid-template-columns: 0 repeat(6, 100px) 0;
+        grid-template-rows: 300px auto auto 300px;
+        grid-template-areas:
+        "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 "
+        "br br br br br br br" 
+        "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
+        "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
+        gap: 10px;  
+        }
     /* browse by category styles end  */
     /* -----------------  */
     /* browse recipes section styles start */
