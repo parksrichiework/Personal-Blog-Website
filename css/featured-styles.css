@@ -1,6 +1,12 @@
 /* external link to color palette  */
 @import "colors.css";
 
+/* external link to navigation styles  */
+@import "nav-styles.css";
+
+/* external link to "category icon" styles  */
+@import "categoryicon-styles.css";
+
    /* --------------------- */
 /* MEDIA STYLES MOBILE start  */
 
@@ -16,20 +22,7 @@
     justify-content: center;
 }
 
-
-.category-icon {
-   display: flex;
-   color: var(--deep-champagne);
-   background-color: var(--raisin-black);
-   font-size: 30pt;
-   width: 50px;
-   height: 50px;
-   padding:30px;
-   align-items: center;
-   justify-content: center;
-   border-radius: 50%;
-   text-decoration: none;
-}
+/* categoryicon styles linked externally */
 
 
 a {
@@ -41,16 +34,17 @@ a {
 /* ----------------- */
 /* body styles start  */
 body {
-    margin:0;
+    margin: 0;
     font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
-    width:100%;
+    width: 100vw;
     height: auto;    
     background-image: url(../img/landing-page-bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover; 
-    color: var(--raisin-black);    
+    color: var(--raisin-black);
+    grid-template-columns: 100vw;    
     grid-template-rows: auto auto auto; 
     grid-template-areas:
     "header"
@@ -61,67 +55,21 @@ body {
 /* -------------------------- */
 /* header styles start  */
 header {
-    width:100%;
+    width: 100vw;   
     height: auto;
     background-color: var(--red-salsa);
     margin:0;
     grid-area: header;
+    grid-template-columns: 100vw;
     grid-template-rows: auto 600px;    
 }
 /* -------------------------- */
-/* nav bar styles start  */
-nav {
-    height: fit-content;
-    display: inherit;
-    align-items: center;
-    grid-gap:10px;
-    grid-template-columns: 20px 80px 250px auto auto 90px 10px;
-    grid-template-rows: 128px;
-    grid-template-areas:
-    "navspace1 logo navspace2 category about search";        
-}
+/* nav bar styles externally linked  */
 
-
-nav img {
-    max-height: 80px;
-    border-radius: 50%;
-}
-
-
-#nav2,
-#nav3 {
-    text-decoration: none;
-    font-size: 20pt;
-    color: var(--off-white);
-    background-color: var(--red-salsa);
-    border-radius: 50px;
-    border: solid 3px var(--off-white);
-    padding: 10px 20px;        
-}
-
-
-#nav1 {
-    grid-area: logo;
- }
-
-
- #nav2 {
-    grid-area: category;
- }
-
-
- #nav3 {
-    grid-area: about;
- }
-
-
- #nav4 {
-    grid-area: search;       
- } 
-/*  nav bar styles end  */
 /* -------------------------- */
  /* welcome message styles start  */
  #welcome-message-container {
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     gap: 50px;
     grid-template-areas:  
@@ -163,9 +111,9 @@ nav img {
 /* ------------------  */
 /* main styles start  */
 main {
-    width: 100%;
+    width: 100vw;
     margin: 0;
-    grid-template-columns: 100%;
+    grid-template-columns: 100vw;
     grid-template-rows: auto;
     grid-template-areas: 
     "mainfeature"
@@ -179,47 +127,58 @@ main {
 /*-------------- featured section styles start  */
 #featured {
     grid-area: mainfeature;
-    width: 100%;
+    width: 100vw;
     height: auto;         
     grid-gap: 50px;
-    grid-template-columns: auto;
+    grid-template-columns: 100vw;
     grid-template-rows: auto 100px 425px 250px 100px;
     grid-template-areas:
     "ftphoto"
-    "ftphotocaption"
+    "ftspace1"
     "ftdescription"
     "ftpricebreakdown"
-    "ftspace";
+    "ftspace2";
     background-color:  var(--rajah-70);         
 }
 
 
-#ft-photo {
+#ft-photo-container {
     grid-area: ftphoto;
-    width: 100%;
+    margin: 0;
+    gap: 20px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "photo"
+    "ftcaption";
+}
+
+
+#ft-photo {  
+    grid-area: photo;  
+    width: 100vw;
     height: auto;      
 }
 
 
 #ft-photo-caption{
-    grid-area: ftphotocaption;
+    grid-area: ftcaption;
     color: var(--off-white);
-    margin: 0 2em;
-    font-size: 1.5em;
+    margin: 0 1em;
+    font-size: 1em;
 }
 
 
 #ft-description {
     grid-area: ftdescription;
-    text-align: justify;
-    margin: 0 100px;    
+    text-align: justify;        
  }
 
 
 #ft-price-breakdown {
     color: var(--off-white);
     grid-area: ftpricebreakdown;
-    font-size: 27pt;
+    font-size: 2em;
+    text-align: center;
 }
 /* -------------featured section styles end  */
 /* ------------------------ */
@@ -232,7 +191,8 @@ main {
     background-position: center;    
     background-blend-mode: screen;
     background-repeat: no-repeat;
-    grid-area: mainabout;   
+    grid-area: mainabout;
+    grid-template-columns: 100vw;   
     grid-template-rows: 500px 300px 200px 200px 500px;
     grid-template-areas:
     "abtspace" 
@@ -245,16 +205,16 @@ main {
 
 #about-title {
     grid-area: abttitle;
-    font-size: 60pt;
+    font-size: 3em;
     color: var(--skobeloff);
+    text-align: center;
 }
 
 
 #about-description {
     grid-area: abtdescription;
-    font-size: 35pt;
-    text-align: center;
-    margin: 0 150px;
+    font-size: 2em;
+    text-align: center;    
 }
 
 
@@ -278,20 +238,20 @@ main {
 /* other blogs styles start  */
 #other-posts {
     grid-area: mainother;
-    grid-template-rows: 200px 600px 600px;    
+    grid-template-rows: 100px 500px 500px;    
 }
 
 
 #other-posts-title {
     margin: 0;
-    font-size: 50pt;
+    font-size: 2em;
     color: var(--raisin-black);
     background-color: var(--rajah);
 }
 
 
 #other-posts h2 {
-    font-size: 3em;
+    font-size: 2em;
     color:var(--deep-champagne);
     background-color: var(--raisin-black-70);
     padding: 20px 30px;
@@ -299,7 +259,7 @@ main {
 
 
 #other-posts a {
-    font-size: 2.5em;
+    font-size: 1em;
     background-color: var(--skobeloff);
     padding: 20px 30px;
     color: var(--off-white);
@@ -326,23 +286,31 @@ main {
     background-color: var(--deep-champagne-30);
     background-blend-mode: soft-light;
 }
+
+
 /* other blogs styles end  */
 /* ----------- */
 /* browse by category styles start  */
     #categories {
+    width: 100vw;
     grid-area: maincategory;
-    grid-template-columns: 0 repeat(5, 100px) 0;
-    grid-template-rows: 250px auto auto 300px;
+    grid-template-columns: auto auto;
+    grid-template-rows: 250px auto auto auto auto 250px;
     grid-template-areas:
-    "catspace1 catspace1 catspace1 catspace1 catspace1 catspace1 catspace1"
-    "br br br br br br br" 
-    "empty1 vegan vegetarian sugarfree nonalcoholic dairyfree empty2"
-    "catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 catspace2 ";
-    gap: 50px;  
+    "catspace1 catspace1 "
+    "br br"
+    "sugarfree nonalcoholic" 
+    "vegan vegetarian"
+    "dairyfree dairyfree"    
+    "catspace2 catspace2";
+    gap: 25px;  
     }
+
+    
     #browse-title {
         grid-area: br;
-        font-size: 20pt;
+        font-size: 1.5em;
+        text-align: center;
     }
 
 
@@ -375,7 +343,7 @@ main {
 #browse-recipe-container {
     grid-area: mainbrrecipe;
     background-color: var(--red-salsa);
-    gap: 10px;
+    gap: 50px;
     grid-template-rows: 300px 50px 100px 300px;
     grid-template-areas: 
     "brspace1"
@@ -386,15 +354,16 @@ main {
 
 
 #browse-recipe-title {
-    font-size: 20pt;
+    font-size: 1.2em;
     flex-direction: column;
-    grid-area: brtitle;        
+    grid-area: brtitle;
+    text-align: center;        
 }
 
 
 #browse-recipe-search {    
     grid-area: brsearch;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     gap: 20px;     
 }
@@ -422,7 +391,7 @@ main {
 
 
  #subscribe-title {
-    font-size: 20pt;
+    font-size: 1.2em;
     grid-area: subtitle;
  }
 
@@ -455,33 +424,33 @@ main {
  /* footer styles start  */
  footer {
     background-color: var(--raisin-black);
-    grid-template-columns: auto;
-    grid-template-rows: 200px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px 50px;
     gap: 10px;
     grid-template-areas:     
-    "allrights shareop"    
+    "footspace1  shareop footspace2"
+    "footspace1 allrights footspace2"    
     ;
 }
 
 
 footer img {
     width: fit-content;
-    height: 100px;
+    height: 60px;
 }
 
 
 #all-rights {
     grid-area: allrights;
     color: var(--off-white);
-    font-size: 20pt;
+    font-size: 1em;
 }
 
 
 #share-options {
    grid-area: shareop;
-   width: 100%;
-   gap: 50px;
-   height: auto;  
+   width: auto;
+   gap: 20px;     
 }
  /* footer styles end  */
 /* MEDIA STYLES MOBILE end  */
@@ -491,6 +460,30 @@ footer img {
  /* MEDIA STYLES: Tablet start  */
  @media(min-width: 500px) and (max-width: 991px){       
     /* ------------ */
+        nav {               
+            grid-gap: 10px;
+            grid-template-columns: 0 60px 275px repeat(3, 1fr);
+            grid-template-rows: 80px;
+            grid-template-areas:
+            "nav1 logo nav3 category about search";        
+        }
+
+
+        nav img {
+            max-height: 60px;
+            border-radius: 50%;
+        }
+
+        #nav2,
+        #nav3 {
+            text-decoration: none;
+            font-size: 1.5em;
+            color: var(--off-white);
+            background-color: var(--red-salsa);
+            border-radius: 50px;
+            border: solid 2px var(--off-white);
+            padding: 5px 40px;        
+        }
     /* welcome message styles start  */
         #welcome-message-container {
             height: 300px;
@@ -539,7 +532,7 @@ footer img {
             "ct1 br br br br br br" 
             "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct1"
             "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct1";
-            gap:50px;  
+            gap: 50px;  
             }
         /* category section end  */
         /* ------------------------------- */
@@ -795,7 +788,7 @@ footer img {
         grid-template-columns: 100px repeat(6, 130px) 100px;    
         grid-template-rows: 70px auto auto 100px;   
         gap: 25px;
-        width: 100%;  
+        width: 100vw;  
     }  
     /* browse by category styles end  */
     /* -----------------  */
@@ -891,7 +884,7 @@ footer img {
 
     #share-options {
         grid-area: shareop;
-        width: 100%;
+        width: 100vw;
         gap: 15px;
         height: auto;  
     }
