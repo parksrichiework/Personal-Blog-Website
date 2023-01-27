@@ -460,12 +460,9 @@ footer img {
  /* MEDIA STYLES: Tablet start  */
  @media(min-width: 500px) and (max-width: 991px){       
     /* ------------ */
-        nav {               
-            grid-gap: 10px;
-            grid-template-columns: 0 60px 280px repeat(3, 1fr);
-            grid-template-rows: 80px;
-            grid-template-areas:
-            "nav1 logo nav3 category about search";        
+        nav {
+            grid-template-columns: 0 60px 1fr auto auto auto 0;
+            grid-template-rows: 100px;
         }
 
 
@@ -552,14 +549,14 @@ footer img {
         /* category section start  */
         #categories {
             grid-area: maincategory;
-            grid-template-columns: auto;
+            grid-template-columns: 0 repeat(5, 1fr) 0;
             grid-template-rows: 250px auto auto 300px;
             grid-template-areas:
             "ct1 ct2 ct2 ct2 ct2 ct2 ct3"
             "ct1 br br br br br ct3" 
             "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct3"
             "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct3";
-            gap: 50px;  
+            gap: 10px;  
         }
         /* category section end  */
         /* ------------------------------- */
@@ -599,7 +596,8 @@ footer img {
     }
     /* ------------------ */
     /* body styles start  */
-    body {   
+    body {
+        width: 100vw;   
         gap: 30px;        
         grid-template-rows: auto;
         grid-template-areas:
@@ -617,8 +615,7 @@ footer img {
     /* ----------------- */
     /* nav bar styles start  */
     nav {    
-        width: 100%;
-        grid-template-columns: 20px 80px 1200px auto auto 80px 10px;
+        grid-template-columns: 0 80px 1fr auto auto 80px 10px;
         grid-template-rows: 80px;
         background-color: var(--deep-champagne-70);           
     }
@@ -675,10 +672,10 @@ footer img {
     /* -----------------  */
     /* main DESKTOP styles start  */
     #main {
-        width: auto;           
+        width: 100%;           
         margin: 0;
         gap: 30px;
-        grid-template-columns: 1fr 1000px 400px 1fr;
+        grid-template-columns: 50px 2fr 1fr 50px;
         grid-template-rows: 500px auto 500px 1fr;
         grid-template-areas: 
         "m1 mainfeatured mainabout m2"
@@ -689,13 +686,13 @@ footer img {
 
 
     /*-------------- featured section styles start  */
-        #featured {
-            width: auto;
+        #featured { 
+            width: 100%;           
             height: auto;
             background-size: cover;
             grid-area: mainfeatured;
-            grid-template-columns: 1000px ;
-            grid-template-rows: 1180px 0 300px;           
+            grid-template-columns: auto ;
+            grid-template-rows: 1fr 0 300px;           
         }
 
 
@@ -742,7 +739,7 @@ footer img {
 
     #about-title {
         grid-area: abttitle;
-        font-size: 25pt;
+        font-size: 2em;
         text-align: center;
         color: var(--skobeloff);
         margin: 0 25px;
@@ -751,7 +748,7 @@ footer img {
 
     #about-description {
         grid-area: abtdescription;
-        font-size: 25pt;        
+        font-size: 2em;        
         margin: 0 50px;
     }   
 
@@ -833,14 +830,14 @@ footer img {
     #categories {
         width: 100%;
         grid-area: mainbrcat;
-        grid-template-columns: 0 repeat(5, 100px) 0;
-        grid-template-rows: 50px auto auto 250px;
+        grid-template-columns: 1fr repeat(5, 100px) 1fr;
+        grid-template-rows: 1fr auto auto 1fr;
         grid-template-areas:
         "ct1 ct2 ct2 ct2 ct2 ct2 ct3"
         "ct1 br br br br br ct3" 
         "ct1 vegan vegetarian sugarfree nonalcoholic dairyfree ct3"
         "ct1 catspace2 catspace2 catspace2 catspace2 catspace2 ct3";
-        gap: 50px;  
+        gap: 10px;  
     }
     /* browse by category styles end  */
     /* -----------------  */
