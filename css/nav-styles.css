@@ -1,17 +1,16 @@
 /* nav bar styles start  */
-nav {
-    display: inherit;
+nav {    
     align-items: center;
     grid-gap: 10px;
-    grid-template-columns: 20px 80px 250px auto auto 90px 10px;
-    grid-template-rows: 128px;
+    grid-template-columns: 0 60px 80px auto auto 1fr;
+    grid-template-rows: 70px;
     grid-template-areas:
-    "navspace1 logo navspace2 category about search";        
+    "nav1 logo nav2 category about search";        
 }
 
 
 nav img {
-    max-height: 80px;
+    max-height: 40px;
     border-radius: 50%;
 }
 
@@ -19,17 +18,18 @@ nav img {
 #nav2,
 #nav3 {
     text-decoration: none;
-    font-size: 20pt;
+    font-size: 0.8em;
     color: var(--off-white);
     background-color: var(--red-salsa);
     border-radius: 50px;
-    border: solid 3px var(--off-white);
-    padding: 10px 20px;        
+    border: solid 2px var(--off-white);
+    padding: 5px 10px;        
 }
 
 
 #nav1 {
     grid-area: logo;
+    
  }
 
 
